@@ -1,0 +1,1624 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You are who you are </title>
+
+  <!--<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=612383f982028300120e6fc1&product=inline-share-buttons" async="async"></script>---->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="icon" href="kny.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+<link rel="stylesheet" href="stylish.css">
+<link rel="stylesheet" href="stylish2.css">
+<link rel="stylesheet" href="stylish3.css">
+<link rel="stylesheet" href="border.css">
+<link rel="stylesheet" href="im.css">
+<link rel="stylesheet" href="poster.css">
+<link rel="stylesheet" href="end.css">  
+<link rel="stylesheet" type="text/css" href="med.css">
+ <link rel="stylesheet" href="preload.css">
+  <link rel="stylesheet" href="health.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="anim3.css">
+<style>
+    body {
+      background-color: #1c212e;
+      transition: all 1s ease-in;
+      
+      
+      
+      
+     
+    }
+ 
+    
+    .colorOne {
+    background: linear-gradient(137deg, #f39f86, #fce043);
+      color: #000;
+    }
+ 
+    .colorTwo {
+      background-color:  #FDE74C;
+      color: #000;
+    }
+ 
+    
+ 
+    #mainContent #firstBox {
+      font-weight: bold;
+      transform: translate3d(-30px, 0, 0);
+      transition: all .5s ease-out;
+      opacity: 0;
+    }
+ 
+    #mainContent #firstBox.active {
+      
+     
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+ 
+    
+  </style>
+
+
+
+
+
+     <style>
+    body {
+      margin: 0;
+    }
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* фоновый цвет */
+      background: linear-gradient(137deg, #23C47A, #275FB5);
+      z-index: 1001;
+
+
+    }
+
+    .preloader__image {
+      position: relative;
+    
+     left: 50%;
+     top: 50vh;
+     margin: -100px 0 0 -100px;
+
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+
+
+
+
+<!------------------------------------------>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+
+
+<script type="text/javascript">
+  
+"use strict";
+
+var main = function() {
+  $('.toggle-btn').click(function() {
+    $('.toggle-btn').hide();
+    $('.inv').show(); //added
+    $('.menu').animate({
+      left: "17%"
+    }, 260);
+  });
+  //Added
+  $('.inv').click(function() {
+    $('.inv').hide();
+    $('.menu').animate({
+      left: "94.5%" //1696
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+
+
+  $('.closed').click(function() {
+    $('.inv').hide(); //added
+    $('.menu').animate({
+      left: "95%"
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+};
+
+$(document).ready(main);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="inv" id="sidebar"></div><!-- Added an invisible block -->
+<div class="menu" id="sidebar"> 
+
+
+<div class='toggle-btn'>
+<span ></span>
+<span ></span>
+<span ></span>
+</div>
+
+
+   <ol>
+  <div><a href="index.html">
+  <img src="KNU.png" alt="menu" style=" " class="knuu"></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style=" " class="wave"></a>
+</div>
+  <div><a href="Infrastructure.html">Infrastructure</a></div>
+  <div><a href="visit.html">Visit</a></div>
+  <div><a href="focus.html">In focus</a></div>
+  <div><a href=" covid.html">About Covid</a></div>
+  <div><a href="news.html">News</a></div>
+
+
+  <div></div>
+</ol>
+
+</div>
+<div class="toggle-btn" ; style= "display:contents"> <span ></span></div>
+
+
+
+
+
+<!----->
+<!----->
+
+
+
+
+
+
+<!----->
+<!----->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+</head>
+
+
+
+<div class="preloader">
+<div class="loader" id="loader" >
+  <div>
+    <ul>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 76%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+    </ul>
+  </div><span>Loading</span>
+</div>
+</div>
+
+
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+
+
+
+
+
+</div><a class="dribbble" href="https://www.instagram.com/elmirabdullaev/" target="_blank"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" style="width:42px;height:42px;margin-right: 50px "></a>
+<a class="dribbble" href="https://t.me/spu_knu" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/600px-Telegram_logo.svg.png" alt="insta" style="width:42px;height:42px; "></a>
+
+
+
+
+
+
+ <div class="container" style="z-index: 1">
+      <div class="box"></div>
+    </div>
+
+<body>
+  
+<div class="w" style="z-index: 1;">
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="i"></div>
+  <div class="h">
+    <h1>Open your thoughts </h1>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="info">
+<div class="block">
+  <h2 style="font-size:42px ; font-family: Lucida Handwriting" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">Sometimes you just need to take a closer <a style="text-decoration: none" href="her.html" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">look..</a> </h2><p style="font-size:42px"><p>
+</div>
+  
+    <script src="js/index.js"></script>
+</div>
+
+
+
+
+
+
+
+<div class="thumb">
+    <a href="hero.html">
+        <span>be part of our comunity </span>
+
+    </a>
+</div>
+
+
+
+
+   
+   <script src="anim.js"></script>
+   <script>
+   window.counter = function() {
+      // this refers to the html element with the data-scroll-showCallback tag
+      var span = this.querySelector('span');
+      var current = parseInt(span.textContent);
+      
+      span.textContent = current + 1;
+   };
+
+   document.addEventListener('DOMContentLoaded', function(){
+     ScrollTrigger.init();
+   });
+   </script>
+
+
+
+
+
+<!-- الحاوية -->
+<div id="container" style="z-index: 1">
+  <div class="block">
+<!--  الصورة ياللي بداخل الحاوية -->
+  <a href="sdmfsdf.html" target="_blank"><img src="https://static.tumblr.com/f9f4253d58950721ab4e47214ebcac39/asrymop/9P4nnlfhb/tumblr_static_tumblr_static_ck5wlz6qil4ccsgw04cwwocsw_640.gif" alt="Omar"> </a>
+  <div class="box-text">
+  <h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight once">KNU</h1>
+  <p data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight once">Taras Shevchenko National University of Kyiv is today a classic university with a distinct research profile, and the leading contemporary academic and educational hub of Ukraine. With the independent Ukrainian nation arising, the University is facing new challenges and responsibilities.
+  </div>
+</div>  
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="block">
+
+<div class="titllxe" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight" >Portfolio</div>
+
+</div>
+<div class="gallery" style="">
+  <ul class="ul1">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <ul class="ul2">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <ul class="ul3">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <ul class="ul4">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <ul class="ul5">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+  <ul class="ul6">
+    <li>A</li>
+    <li>B</li>
+    <li>C</li>
+    <li>D</li>
+    <li>E</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+                
+
+
+
+
+
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="container">
+  <div class="block">
+  <h1> <span data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Sources</span> </h1>
+  
+  <div class="subheader" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight" >(hover to check effect)</div>
+  </div>
+  <div class="link">
+   
+    <a  title="Check Codepen Challenge" target="_blanc"><i class="material-icons">
+   
+      </i>site was created by Elmir Abdullaev</a>
+  </div>
+
+  <div class="content-block">
+
+    <!-- effect #1-->
+    <div class="content-block__effect">
+      <h2></h2>
+
+      <div class="portfolio-effect">
+
+        <!-- portfolio item -->
+        <div class="portfolio-item portfolio-effect__item  portfolio-item--eff1 effe1"  >
+
+          <img class="portfolio-item__image" src="https://www.stanford.edu/wp-content/uploads/2017/06/undergrad-class-8x5.jpg" alt="Portfolio Item" width="826" height="551">
+
+          <div class="portfolio-item__info">
+
+ <h3 class="portfolio-item__header"  style="color: black">Student`s life</h3>
+
+            <div class="portfolio-item__links">
+
+            
+             
+              <div class="portfolio-item__link-block" style="display: flex">
+
+                <div class="container">
+        <button class="share-btn2">
+            <i class="fas fa-share-alt"></i>
+        </button>
+          
+
+
+              </div>
+
+              <div class="portfolio-item__link-block">
+                <a class="portfolio-item__link" href="https://www.univ.kiev.ua/ua/student-life" title="Link Title">
+                  <i class="material-icons" style="width: 35px;"><img src="search.png" alt=""></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="share-options2">
+            <p class="title" style="margin: 0.7em;
+    margin-left: 82px;">share</p>
+            <div class="social-media">
+            <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"><button class="social-media-btn" style="background: #FFA654;;"><i class="far fa-folder-open"></i></button></a>
+            <a href="https://api.whatsapp.com/send?text=AddThis%20Share%20Buttons%20-%20AddThis%20https%3A%2F%2Fwww.addthis.com%2Fget%2Fshare%2F%23.YSObKt6r7fE.whatsapp"> <button class="social-media-btn" style="    background: #25D366;"><i class="fab fa-whatsapp"></i></button></a> 
+            <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><button class="social-media-btn"  style="background: #1DA1F2;"><i class="fab fa-twitter"></i></button></a>  
+            <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" >  <button class="social-media-btn"  style="background: #0A66C2;"> <i class="fab fa-facebook-f"></i></button></a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank"><button class="social-media-btn" style="background:#1877F2;"><i class="fab fa-linkedin-in"></i></button></a>
+            <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.sharethis.com%2F&text=ShareThis%20Onboarding%3A%20Customize%20Share%20Buttons%20%26%20Other%20Tools%20-%20ShareThis&to="><button class="social-media-btn"  style="background: #1DA1DC;"><i class="fab fa-telegram"></i></button></a>
+            
+        </div>
+            <div class="link-container">
+                <input type="text" class="link" value="Hello World" id="myInput">
+
+
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()" class="copy-btn" style="    padding-bottom: 100px;font-size:17.1px">
+  <span class="tooltiptext" id="myTooltip"></span>Copy text</button>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+</script>
+
+
+
+<script src="app3.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- portfolio item -->
+        <div class="portfolio-item portfolio-effect__item  portfolio-item--eff1 effe2" style="    "  >
+
+          <img class="portfolio-item__image" src="https://beautifulmag-lifestyle.com/wp-content/uploads/2020/05/1EDE483A-4AD8-4F77-9036-C6A839CAB6BC.jpg" alt="Portfolio Item" width="826" height="551">
+
+          <div class="portfolio-item__info">
+
+            <h3 class="portfolio-item__header"  style="color: black">Admision</h3>
+
+            <div class="portfolio-item__links">
+
+            
+             
+              <div class="portfolio-item__link-block" style="display: flex">
+
+                <div class="container">
+        <button class="share-btn1">
+            <i class="fas fa-share-alt"></i>
+        </button>
+          
+
+
+              </div>
+
+              <div class="portfolio-item__link-block">
+
+                <a class="portfolio-item__link" href="https://vstup.knu.ua/" title="Link Title">
+                  <i class="material-icons" style="width: 35px;"><img src="search.png" alt=""></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+<div class="share-options1">
+            <p class="title" style="margin: 0.7em;
+    margin-left: 82px;">share</p>
+            <div class="social-media">
+            <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"><button class="social-media-btn" style="background: #FFA654;;"><i class="far fa-folder-open"></i></button></a>
+            <a href="https://api.whatsapp.com/send?text=AddThis%20Share%20Buttons%20-%20AddThis%20https%3A%2F%2Fwww.addthis.com%2Fget%2Fshare%2F%23.YSObKt6r7fE.whatsapp"> <button class="social-media-btn" style="    background: #25D366;"><i class="fab fa-whatsapp"></i></button></a> 
+            <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><button class="social-media-btn"  style="background: #1DA1F2;"><i class="fab fa-twitter"></i></button></a>  
+            <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" >  <button class="social-media-btn"  style="background: #0A66C2;"> <i class="fab fa-facebook-f"></i></button></a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank"><button class="social-media-btn" style="background:#1877F2;"><i class="fab fa-linkedin-in"></i></button></a>
+            <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.sharethis.com%2F&text=ShareThis%20Onboarding%3A%20Customize%20Share%20Buttons%20%26%20Other%20Tools%20-%20ShareThis&to="><button class="social-media-btn"  style="background: #1DA1DC;"><i class="fab fa-telegram"></i></button></a>
+            
+        </div>
+            <div class="link-container">
+                <input type="text" class="link" value="Hello World" id="myInput">
+
+
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()" class="copy-btn" style="padding-bottom: 100px;font-size:17.1px">
+  <span class="tooltiptext" id="myTooltip"></span>Copy text</button>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+</script>
+
+
+
+<script src="app2.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- portfolio item -->
+        <div class="portfolio-item portfolio-effect__item  portfolio-item--eff1 effe3" style=""  >
+
+          <img class="portfolio-item__image" src="https://www.stanford.edu/wp-content/uploads/2017/06/lifelong_learning-8x5.jpg" alt="Portfolio Item" width="826" height="551">
+
+          <div class="portfolio-item__info">
+
+            <h3 class="portfolio-item__header"  style="color: black">Research</h3>
+
+            <div class="portfolio-item__links">
+
+              <div class="portfolio-item__link-block" style="display: flex">
+
+                <div class="container">
+        <button class="share-btn">
+            <i class="fas fa-share-alt"></i>
+        </button>
+          
+
+
+              </div>
+
+              <div class="portfolio-item__link-block">
+
+                <a class="portfolio-item__link" href="#" title="Link Title">
+                  <i class="material-icons" style="    width: 35px;"><img src="search.png" alt="" ></i>
+
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    
+
+<div class="share-options">
+            <p class="title" style="margin: 0.7em;
+    margin-left: 82px;" >share</p>
+            <div class="social-media">
+            <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"><button class="social-media-btn" style="background: #FFA654;;"><i class="far fa-folder-open"></i></button></a>
+            <a href="https://api.whatsapp.com/send?text=AddThis%20Share%20Buttons%20-%20AddThis%20https%3A%2F%2Fwww.addthis.com%2Fget%2Fshare%2F%23.YSObKt6r7fE.whatsapp"> <button class="social-media-btn" style="    background: #25D366;"><i class="fab fa-whatsapp"></i></button></a> 
+            <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><button class="social-media-btn"  style="background: #1DA1F2;"><i class="fab fa-twitter"></i></button></a>  
+            <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" >  <button class="social-media-btn"  style="background: #0A66C2;"> <i class="fab fa-facebook-f"></i></button></a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank"><button class="social-media-btn" style="background:#1877F2;"><i class="fab fa-linkedin-in"></i></button></a>
+            <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.sharethis.com%2F&text=ShareThis%20Onboarding%3A%20Customize%20Share%20Buttons%20%26%20Other%20Tools%20-%20ShareThis&to="><button class="social-media-btn"  style="background: #1DA1DC;"><i class="fab fa-telegram"></i></button></a>
+            
+        </div>
+            <div class="link-container">
+                <input type="text" class="link" value="Hello World" id="myInput">
+
+
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()" class="copy-btn" style="    padding-bottom: 100px;font-size:17.1px">
+  <span class="tooltiptext" id="myTooltip"></span>Copy text</button>
+</div>
+            </div>
+        </div>
+    </div>
+
+
+
+<script>
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+</script>
+
+
+
+<script src="app.js"></script>
+
+
+
+
+<div id="mainContent">
+
+
+<hr>
+<p id="firstBox"><img src="https://img.icons8.com/ios/50/000000/sun--v3.png"/></p>
+ </div>
+
+  
+   
+
+ 
+  <script>
+    var isScrolling = false;
+ 
+    window.addEventListener("scroll", throttleScroll, false);
+ 
+    function throttleScroll(e) {
+      if (isScrolling == false) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+      }
+      isScrolling = true;
+    }
+ 
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+ 
+    var listItems = document.querySelectorAll("#mainContent ol li");
+    var firstBox = document.querySelector("#firstBox");
+    var secondBox = document.querySelector("#secondBox");
+ 
+    function scrolling(e) {
+ 
+      if (isPartiallyVisible(firstBox)) {
+        firstBox.classList.add("active");
+ 
+        document.body.classList.add("colorOne");
+        document.body.classList.remove("colorTwo");
+      } else {
+        document.body.classList.remove("colorOne");
+        document.body.classList.remove("colorTwo");
+      }
+ 
+      if (isFullyVisible(secondBox)) {
+        secondBox.classList.add("active");
+ 
+        document.body.classList.add("colorTwo");
+        document.body.classList.remove("colorOne");
+      }
+ 
+      for (var i = 0; i < listItems.length; i++) {
+        var listItem = listItems[i];
+ 
+        if (isPartiallyVisible(listItem)) {
+          listItem.classList.add("active");
+        } else {
+          listItem.classList.remove("active");
+        }
+      }
+    }
+ 
+    function isPartiallyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+      var height = elementBoundary.height;
+ 
+      return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+ 
+    function isFullyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+ 
+      return ((top >= 0) && (bottom <= window.innerHeight));
+    }
+  </script>
+
+
+</div>
+
+
+
+</body>
+</html>

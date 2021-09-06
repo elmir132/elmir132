@@ -1,0 +1,664 @@
+
+
+@media (max-width:1530px ){
+.container{
+  
+
+width:1140px ;
+ 
+
+}
+
+#sidebar{
+position: fixed;
+width: 800px;
+height: 600px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -820px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+}
+#sidebar.active{
+right: 25px;
+top:3px;
+z-index: 2;
+}
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:1.4em;
+  list-style-type: none;
+  padding: 1px 10px 80px 10px;
+color: white
+
+}
+#sidebar ul li:not(:first-child) {
+  width: 40%;
+  margin-left:30px;
+  color: white;
+  font-size:1.6em;
+  list-style-type: none;
+  padding: 1px 1px ;
+  font-size:px;
+  color: white;
+  margin-left:250px; 
+  margin-bottom:5px;
+}
+
+
+
+
+#sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 820px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+
+
+
+
+
+
+
+
+
+
+
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+@media (max-width:1200px ){
+.container{
+  
+
+width:1140px ;
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/*<!------------------------------------------------------------------------------------------------------------------------->*/
+@media (max-width:1199px ){
+.container{
+ 
+width:760px ;
+ 
+
+}
+
+
+
+
+#sidebar{
+position: fixed;
+width: 500px;
+height: 600px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -520px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+}
+#sidebar.active{
+right: 25px;
+top:3px;
+z-index: 2;
+}
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:1.0em;
+  list-style-type: none;
+  padding: 1px 1px 15px 1px;
+color: white
+
+}
+#sidebar ul li:not(:first-child) {
+  width: 40%;
+  margin-left:30px;
+  color: white;
+  font-size:1.3em;
+  list-style-type: none;
+  padding: 1px 1px ;
+  font-size:px;
+  color: white
+
+}
+
+
+
+
+#sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 520px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+/*<!------------------------------------------------------------------------------------------------------------------------->*/
+
+
+
+
+
+@media (max-width:991px ){
+.container{
+
+ 
+width:720px; 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+
+
+/*<!------------------------------------------------------------------------------------------------------------------------->*/
+
+
+
+@media (max-width:790px ){
+.container{
+  
+width:540px 
+
+
+}
+
+
+
+
+
+
+#sidebar{
+position: fixed;
+width: 400px;
+height: 600px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -420px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+}
+#sidebar.active{
+right: 25px;
+top:3px;
+z-index: 2;
+}
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:1.0em;
+  list-style-type: none;
+  padding: 1px 1px 15px 1px;
+color: white
+
+}
+#sidebar ul li:not(:first-child) {
+  width: 40%;
+  margin-left:30px;
+  color: white;
+  font-size:1.3em;
+  list-style-type: none;
+  padding: 1px 1px ;
+  font-size:px;
+  color: white
+
+}
+
+
+
+
+#sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 420px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+}
+
+   
+
+
+
+
+
+
+}
+
+
+
+/*<!------------------------------------------------------------------------------------------------------------------------->*/
+
+@media(max-width: 500px){
+
+
+
+
+
+#sidebar{
+position: fixed;
+width: 300px;
+height: 600px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -320px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+}
+#sidebar.active{
+right: 25px;
+top:3px;
+z-index: 2;
+}
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:1.0em;
+  list-style-type: none;
+  padding: 1px 1px 15px 1px;
+color: white
+
+}
+#sidebar ul li:not(:first-child) {
+  width: 40%;
+  margin-left:30px;
+  color: white;
+  font-size:1.3em;
+  list-style-type: none;
+  padding: 1px 1px ;
+  font-size:px;
+  color: white
+
+}
+
+
+
+
+#sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 320px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+}
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+
+/*<!------------------------------------------------------------------------------------------------------------------------->*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:426px ){
+.container{
+ 
+width:100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+/*<!!!!!!!!!!!!!___________________________________________________________!!!!!!!!!!!!>*/
+
+
+
+
+@media (max-width:321px ){
+.container{
+ 
+width:321px;
+}
+
+
+
+
+
+#sidebar{
+position: fixed;
+width: 245px;
+height: 800px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -250px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+}
+#sidebar.active{
+right: 25px;
+top:3px;
+z-index: 2;
+}
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:0.7em;
+  list-style-type: none;
+  padding: 1px 1px 15px 1px;
+color: white
+
+}
+#sidebar ul li:not(:first-child) {
+  width: 40%;
+  margin-left:1px;
+  color: white;
+  font-size:1.3em;
+  list-style-type: none;
+  padding: 1px 1px ;
+  font-size:px;
+  color: white
+
+}
+
+
+
+
+#sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 250px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

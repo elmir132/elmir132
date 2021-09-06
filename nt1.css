@@ -1,0 +1,209 @@
+body{
+ background-image: url("../img/ep_naturalwhite.png");
+}
+header{
+ margin-bottom: 65px;
+ font-family: Cuprum, Arial, Helvetica, sans-serif;
+ margin-left: 1px; 
+margin-right: 90px
+
+}
+.dws-menu *{
+ margin: 0;
+ padding: 0;
+
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+ cursor: pointer;
+
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content: center;
+ bir
+
+}
+.dws-menu > ul li{
+ position: relative;
+ border-radius: 5px ;
+ background-color: black;
+
+}
+.dws-menu > ul li:first-child{
+ border-radius: 100px ;
+ text-decoration:underline;
+
+}
+.dws-menu > ul li:last-child{
+ border-radius: 100px ;
+}
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 18px;
+ border-radius: 6px
+}
+.dws-menu > ul li a{
+ display: block;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+ background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius:100px;
+  text-decoration:none;
+
+}
+.dws-menu li a:hover{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+  background:#fff;
+  color:#1AAB8A;
+  transform:scale(1.05,1.05 ); 
+  transition:500ms ease all;
+
+}
+
+.dws-menu li a:before,.dms-menu:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:0ms ease all;
+  text-decoration:none;
+}
+
+.dws-menu li a:active{
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e0e1e5+0,454547+2,454547+98,e0e1e5+100 */
+ display: block;
+ /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#c9c9c9+0,f6f6f6+2,c4c5c7+98,757577+100;Custom+3 */
+ background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius:100px;
+  text-decoration:none;
+
+}
+
+.dms-menu:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+
+
+
+.dms-menu:hover:before,.dms-menu:hover:after{
+    content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+  transition:800ms ease all;
+}
+
+
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: none;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: none;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#abd{
+  background:#1AAB8A;
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  border-radius:100px;
+}
+#abd:hover{
+  background:#fff;
+  color:#1AAB8A;
+}
+#abd:before,#abd:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #1AAB8A;
+  transition:400ms ease all;
+}
+#abd:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+#abd:hover:before,#abd:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}

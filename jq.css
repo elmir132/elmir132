@@ -1,0 +1,240 @@
+
+.menu {
+   position: fixed;
+width: 500px;
+height: 900px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -725px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+margin-left: 100px
+
+}
+
+
+
+.glyphicon-remove, ul {
+    color: white;
+    padding: 10px;
+
+    
+}
+
+
+/* Added an invisible block */
+
+
+
+.inv {
+    display:none;
+    width:100%;
+    height:100%;
+    position:fixed;
+    margin:0;
+}
+
+
+
+
+*{
+padding:0;
+margin:0;
+font-family: Canela Dec Web;  
+
+
+}
+
+
+#sidebar.active{
+right: 250px;
+top:3px;
+z-index: 2;
+}
+
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:1.95em;
+  list-style-type: none;
+  padding: 10px 10px 150px 10px;
+
+
+}
+#sidebar ul li:not(:first-child) {
+  width: 90%;
+  text-align: center;
+  color: white;
+  font-size:1.1em;
+  list-style-type: none;
+  padding: 15px 10px ;
+  font-size:70px;
+
+}
+#sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 1105px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ #sidebar  .active{
+right: -1250px;
+top:3px;
+z-index: 2;
+}
+
+ #sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+font-size:2.5em;
+  list-style-type: none;
+  padding: 10px 10px 150px 10px;
+font-size:40px;
+
+}
+ #sidebar ul li:not(:first-child) {
+ 
+  margin-left:120px;
+  color: white;
+font-size:2.9em;
+  list-style-type: none;
+  padding: 15px 10px ;
+  font-size:px;
+
+}
+ #sidebar ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+   #sidebar ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar .toggle-btn{
+position: absolute;
+right: 745px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+ #sidebar .toggle-btn:hover {background:#556270 } 
+ #sidebar  .toggle-btn:hover span {background:#fafafa } 
+  #sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+}
+
+
+
+     

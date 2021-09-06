@@ -1,0 +1,38 @@
+<!DOCTYPE HTML> 
+<html> 
+    <head> 
+        <title> 
+            How to change the background color
+            after clicking the button ?
+        </title>
+    </head> 
+      
+    <body style = "text-align:center;">
+           
+       
+        <p onclick = "gfg_Run()"> 
+            Click here
+        </p>
+          
+        <p id = "GFG_DOWN" style =
+            "color:green; font-size: 20px; font-weight: bold;">
+        </p>
+          
+        <script>
+            var el_up = document.getElementById("GFG_UP");
+            var el_down = document.getElementById("GFG_DOWN");
+            var str = "Click on button to change the background color";
+          
+            el_up.innerHTML = str;
+          
+            function changeColor(color) {
+                document.body.style.background = color;
+            }
+              
+            function gfg_Run() {
+                changeColor('yellow');
+                el_down.innerHTML = "";
+            }         
+        </script> 
+    </body> 
+</html> 

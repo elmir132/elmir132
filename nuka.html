@@ -1,0 +1,110 @@
+
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JavaScript SimpleAdaptiveSlider - Слайдер для сайта на чистом JavaScript [Example 04]</title>
+  <base href="">
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="simple-adaptive-slider.min.css">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="simple-adaptive-slider.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        autoplay: true,
+        interval: 10000,
+      });
+    });
+  </script>
+  <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+.slider__control {
+    position: absolute;
+    top: 50%;
+    width: 31px;
+    height: 100%;
+    transform: translateY(-50%);
+    display: ;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    opacity: .2;
+    user-select: none;
+}
+    .slider {
+      max-width:100%;
+      height: 720px
+    }
+
+    /* дополнительные стили для этого примера */
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      position: relative;
+      counter-increment: slide;
+    }
+
+    .slider__item::after {
+      content: counter(slide);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .img-fluid {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+
+    }
+  </style>
+</head>
+          
+<body>
+
+
+
+
+
+
+
+  <!-- Разметка слайдера -->
+  <div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <img class="img-fluid" src="worldd.jpg" width="100%" height= "72%" alt="..."  loading="lazy" style="height: 78%">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="viewss.jpg" alt="..." width="100%" height= "72%" loading="lazy" style="height: 102%">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="new4.png" alt="..." width="100%" height= "72%" loading="lazy" style="height: 78%">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid" src="new3.png" alt="..." width="100%" height= "72%" loading="lazy" style="height: 78%">
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+  </div>
+</body>
+
+</html>

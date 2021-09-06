@@ -1,0 +1,55 @@
+
+/*html,
+body {
+  font-family: "Raleway", sans-serif;
+  padding: 1em 2em;
+  font-size: 18px;
+  background: #222;
+  color: #aaa;
+}
+
+h1,
+h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  color: #888;
+  font-size: 2em;
+}*/
+
+
+.anim-show{
+
+
+
+font-size:25px;
+
+padding:20px;
+margin:auto;
+
+text-align:center;
+opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+transition: 1s; /*Скорость перехода состояния элемента*/
+animation: show 1.7s 1; /* Указываем название анимации, её время и количество повторов*/
+animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+animation-delay: 1s; /* Задержка перед началом */
+}
+
+
+@keyframes show{
+0%{
+opacity:0;
+
+}
+
+
+
+100% {
+opacity:1;
+transition: 1s
+}
+}

@@ -1,0 +1,78 @@
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #201515;
+  position: relative;
+}
+body:after {
+  content: "";
+  background: url(http://www.transparenttextures.com/patterns/dust.png) repeat center center;
+  opacity: 0.07;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.angle {
+  cursor: pointer;
+  width: 100%;
+  height: 1000px;
+  margin-bottom: -400px;
+  padding: 0;
+  background-color: #201515;
+  background-size: cover, auto;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-clip-path: polygon(50% 25%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 50%);
+  transition: all 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+.angle.first {
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 0%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 0%);
+}
+.angle.last {
+  -webkit-clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+.arrow {
+  -webkit-clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0% 100%, 0% 50%);
+}
+.arrow.first {
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%, 0% 0%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%, 0% 0%);
+}
+.arrow.last {
+  -webkit-clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+
+.one {
+  background-image: url(https://source.unsplash.com/1600x900/?water);
+}
+
+.two {
+  background-image: url(https://source.unsplash.com/1600x901/?water);
+}
+
+.three {
+  background-image: url(https://source.unsplash.com/1600x902/?water);
+}
+
+.four {
+  background-image: url(https://source.unsplash.com/1600x903/?water);
+}
+
+.five {
+  background-image: url(https://source.unsplash.com/1600x904/?water);
+}
+
+.six {
+  background-image: url(https://source.unsplash.com/1600x905/?water);
+}

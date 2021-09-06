@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=Bad+Script|Bellefair|Comfortaa|Satisfy|Slabo+27px|Vidaloka');
+
+
+
+/* لون خلفية الصفحة */
+
+
+
+#container img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: -5px;
+	transition: all 0.3s ease-out;
+	position: relative;
+	z-index: 2;
+}
+
+
+/* الطريقة الاولي */
+/* عندما المس الصورة قم بتكبيرها */
+/* #container img:hover {transform: scale(1.2, 1.2);} */
+
+/* الطريقة الثانية */
+/* عندما المس الحاوية قم بتكبير الصورة */
+#container:hover img {
+	transform: scale(1.2, 1.2);
+	z-index: 9;
+}
+

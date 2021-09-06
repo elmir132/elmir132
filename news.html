@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>News</title>
+	<link rel="stylesheet" href="health.css">
+  <link rel="stylesheet" href="Infrastructure.css">
+    <link rel="stylesheet" href="me.css">
+  <link rel="stylesheet" href="html.css">
+<link rel="icon" href="kny.png">
+<style>
+    
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* фоновый цвет */
+      background: linear-gradient(137deg, #23C47A, #275FB5);
+      z-index: 1001;
+
+
+    }
+
+    .preloader__image {
+      position: relative;
+    
+     left: 50%;
+     top: 50vh;
+     margin: -100px 0 0 -100px;
+
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+
+
+  <style>
+   
+
+
+
+<style>
+   
+	A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+   /*text-decoration:underline  ;  /* Добавляем подчеркивание при наведении курсора на ссылку */
+    
+    color: red; /* Ссылка красного цвета */
+   } 
+
+
+
+
+
+ .sign {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 1px; /* Поля внутри блока */
+    margin: 0px 0 0px 0px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+    margin-bottom: 1100px;
+   }
+   .sign figcaption {
+    margin: 0 auto 0px; /* Отступы вокруг абзаца */
+   }
+
+
+
+	h1 {
+    font-weight: normal; /* Нормальное начертание */
+   } 
+   .select {
+     /* Цвет текста */
+    font-weight: 600; /* Жирное начертание */
+   }
+
+
+
+   table.text  {
+    width:  100%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+   }
+   table.text td {
+    width: 50%; /* Ширина ячеек */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+   }
+   td.rightcol { /* Правая ячейка */ 
+    text-align: right; /* Выравнивание по правому краю */
+   }
+  </style>
+</head>
+
+<body style=" background: linear-gradient(
+180deg
+,hsla(0,0%,88%,0) 29.9%,crimson);
+    left: 0;
+    width: 100%;
+    height: 100%;">
+
+	
+</head>
+
+
+
+
+
+<!----->
+
+
+
+<div class="preloader">
+<div class="loader" id="loader" >
+  <div>
+    <ul>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 76%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+    </ul>
+  </div><span>Loading</span>
+</div>
+</div>
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+
+
+
+<!----->
+
+
+
+
+
+
+
+
+
+<body>
+<!-------->
+
+
+<!-------->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+
+
+<script type="text/javascript">
+  
+"use strict";
+
+var main = function() {
+  $('.toggle-btn').click(function() {
+    $('.toggle-btn').hide();
+    $('.inv').show(); //added
+    $('.menu').animate({
+      left: "17%"
+    }, 260);
+  });
+  //Added
+  $('.inv').click(function() {
+    $('.inv').hide();
+    $('.menu').animate({
+      left: "94.5%" //1696
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+
+
+  $('.closed').click(function() {
+    $('.inv').hide(); //added
+    $('.menu').animate({
+      left: "95%"
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+};
+
+$(document).ready(main);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="inv" id="sidebar"></div><!-- Added an invisible block -->
+<div class="menu" id="sidebar"> <span ></span>
+
+
+<div class='toggle-btn'   >
+<span class="rir"></span>
+<span class="rir"></span>
+<span class="rir" ></span>
+</div>
+
+
+   <ul>
+  <li><a href="index.html">
+  <img src="KNU.png" alt="menu" style=" " class="knuu"></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style=" " class="wave"></a>
+</li>
+  <li><a href="Infrastructure.html">Infrastructure</a></li>
+  <li><a href="visit.html">Visit</a></li>
+  <li><a href="focus.html">In focus</a></li>
+  <li><a href=" covid.html">About Covid</a></li>
+  <li><a href="news.html">News</a></li>
+
+
+  <li></li>
+</ul>
+
+</div>
+<div class="toggle-btn" ; style= "display:contents"> <span ></span></div>
+
+
+
+
+
+<!----->
+<!----->
+
+
+
+<a href="index.html">
+	<img src="KNU.png" alt="menu" style="float:left ; width: :162px ; height:92px;padding-right: 1px; ">
+</a>
+<span class="select"><a href="news.html"><div style="" class="news">News</div></a></span>
+
+
+
+
+<!-------------->
+
+
+
+<div id='outerdiv' > 
+<iframe src="https://www.univ.kiev.ua/ua/#news" id='innerIframe' scrolling=no  style=" "></iframe> 
+</div> 
+
+
+<!------------------>
+
+
+
+
+
+
+<section style="" class="andd">
+  <h3 ><i>Site was designed by Elmir Abdullaev<i></h3>
+  <a href="https://www.instagram.com/elmirabdullaev/"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="insta" style="float:center;width:42px;height:42px;background-attachment: fixed; "></a>
+
+  <a href="https://t.me/spu_knu"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/600px-Telegram_logo.svg.png" alt="insta" style="float:center;width:42px;height:42px; "></a>
+
+<span style="text-align: right;color:white"><i> *site was designed by Elmir Abdullaev<i></span>
+</section>
+
+
+</body>
+</html>

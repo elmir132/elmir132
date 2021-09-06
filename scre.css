@@ -1,0 +1,377 @@
+
+.loader {
+    --background: linear-gradient(135deg, #23c4f8, #275efe);
+    --shadow: rgba(39, 94, 254, 0.28);
+    --text: #275F8F;
+    --page: rgba(255, 255, 255, 0.36);
+    --page-fold: rgba(255, 255, 255, 0.52);
+    --duration: 3s;
+    width: 200px;
+    height: 140px;
+    position: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 203px;
+    height: 141px;
+}
+.loader:before, .loader:after {
+  --r: -6deg;
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  width: 120px;
+  top: 80%;
+  box-shadow: 0 16px 12px var(--shadow);
+  transform: rotate(var(--r));
+}
+.loader:before {
+  left: 4px;
+}
+.loader:after {
+  --r: 6deg;
+  right: 4px;
+}
+.loader div {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  position: relative;
+  z-index: 1;
+  perspective: 600px;
+  box-shadow: 0 4px 6px var(--shadow);
+  background-image: var(--background);
+}
+.loader div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.loader div ul li {
+  --r: 180deg;
+  --o: 0;
+  --c: var(--page);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform-origin: 60% 50%;
+  color: var(--c);
+  opacity: var(--o);
+  transform: rotateY(var(--r));
+  -webkit-animation: var(--duration) ease infinite;
+          animation: var(--duration) ease infinite;
+}
+.loader div ul li:nth-child(2) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-2;
+          animation-name: page-2;
+}
+.loader div ul li:nth-child(3) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-3;
+          animation-name: page-3;
+}
+.loader div ul li:nth-child(4) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-4;
+          animation-name: page-4;
+}
+.loader div ul li:nth-child(5) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-5;
+          animation-name: page-5;
+}
+.loader div ul li svg {
+  width: 90px;
+  height: 120px;
+  display: block;
+}
+.loader div ul li:first-child {
+  --r: 0deg;
+  --o: 1;
+}
+.loader div ul li:last-child {
+  --o: 1;
+}
+.loader span {
+  display: block;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text);
+}
+
+@-webkit-keyframes page-2 {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+  }
+  50%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes page-2 {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+  }
+  50%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes page-3 {
+  15% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+  65%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes page-3 {
+  15% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+  65%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes page-4 {
+  30% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65%, 100% {
+    opacity: 0;
+  }
+  80%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes page-4 {
+  30% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65%, 100% {
+    opacity: 0;
+  }
+  80%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes page-5 {
+  45% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+  95%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes page-5 {
+  45% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+  95%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #201515;
+  position: relative;
+}
+body:after {
+  content: "";
+  background: url(http://www.transparenttextures.com/patterns/dust.png) repeat center center;
+  opacity: 0.07;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: fixed;
+  z-index: 100;
+  pointer-events: none;
+}
+
+.angle {
+  cursor: pointer;
+  width: 100%;
+  height: 10219px;
+  margin-bottom: -400px;
+  padding: 0;
+  background-color: #201515;
+  background-size: cover, auto;
+  background-attachment: fixed;
+  background-position: center center;
+  -webkit-clip-path: polygon(50% 25%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 50%);
+  transition: all 0.7s ease-in-out;
+  background-blend-mode: lighten;
+}
+.angle.first { height: 20px;  width: 50%;
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 0%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 50%, 50% 75%, 0% 100%, 0% 0%);
+}
+.angle.last {
+  -webkit-clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 0%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+.arrow {
+  -webkit-clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 75%, 0% 100%, 0% 50%);
+}
+.arrow.first {
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%, 0% 0%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 75%, 0% 100%, 0% 0%);
+}
+.arrow.last {
+  -webkit-clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+          clip-path: polygon(50% 25%, 100% 50%, 100% 100%, 50% 100%, 0% 100%, 0% 50%);
+}
+
+.one {
+  background-image: url(https://source.unsplash.com/1600x900/?water);
+}
+
+.two {
+  background-image: url(https://source.unsplash.com/1600x901/?water);
+}
+
+.three {
+  background-image: url(https://source.unsplash.com/1600x902/?water);
+}
+
+.four {
+  background-image: url(https://source.unsplash.com/1600x903/?water);
+}
+
+.five {
+  background-image: url(https://source.unsplash.com/1600x904/?water);
+}
+
+.six {
+  background-image: url(https://source.unsplash.com/1600x905/?water);
+}
+.seven {
+  background-image: url(https://www.loftaholics.com/wp-content/uploads/2020/11/photos.jpg);
+}
+.eight {
+  background-image: url(https://images.unsplash.com/photo-1593179835737-9f82a5f30c68?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGxhbnNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+}
+.nine {
+  background-image: url(https://mymodernmet.com/wp/wp-content/uploads/2019/12/photos-of-indonesia-rarindra-prakarsa-4.jpg);
+}
+.ten {
+  background-image: url(https://images.unsplash.com/photo-1552575358-c91311522b16?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjF8fGxhbnNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+}
+.eleven {
+  background-image: url(https://www.telegraph.co.uk/content/dam/Travel/galleries/travel/activityandadventure/Baku-Azerbaijan-10-of-the-citys-weirdest-tourist-attractions/baku-palace_3335412a.jpg?imwidth=1400);
+}
+.twelf{
+  background-image: url(https://images.unsplash.com/photo-1590588581825-9306864c315e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTd8fGF6ZXJiYWlqYW58ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+}
+.thirteen{
+  background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80);
+}
+.fourteen{
+  background-image: url(https://cdn2.outdoorphotographer.com/2019/11/Kiss_The_Landscape_Part2_05.jpg);
+}
+.fiveteen{
+  background-image: url("imagee.jpg");
+}
+.sixteen{
+  background-image: url(https://images.unsplash.com/photo-1553598071-4c1e73310e26?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nzh8fGxhbnNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+}
+.seventeen{
+  background-image: url(https://images.unsplash.com/photo-1441644599508-24ae08965c5c?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fGxhbnNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+}
+.eighteen{
+  background-image: url(https://media.architecturaldigest.com/photos/58238acb355a259d55d5185d/master/pass/surreal-landscapes-us-01.jpg);
+}
+.nineteen{
+  background-image: url(https://images.unsplash.com/photo-1491488884926-6ab2ffc1c629?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTl8fGxhbnNjYXBlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+}
+.twenty{
+  background-image: url(https://eufordigital.eu/wp-content/uploads/2019/08/ukraine.jpg);
+}
+
+
+
+
+
+
+
+
+
