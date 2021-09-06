@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+ 
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Change Color on Scroll</title>
+ 
+  <style>
+    body {
+      background-color: #FDE74C;
+      transition: all 1s ease-in;
+      padding: 50px;
+      color: #111;
+      font-family: sans-serif;
+      line-height: 32px;
+      font-size: 18px;
+    }
+ 
+    
+    .colorOne {
+      background-color: #9BC53D;
+      color: #000;
+    }
+ 
+    .colorTwo {
+      background-color: #FFF;
+      color: #000;
+    }
+ 
+    
+ 
+    #mainContent #firstBox {
+      font-weight: bold;
+      transform: translate3d(-30px, 0, 0);
+      transition: all .5s ease-out;
+      opacity: 0;
+    }
+ 
+    #mainContent #firstBox.active {
+      
+     
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+ 
+    #mainContent #secondBox {
+      transition: all .2s ease-in-out;
+      transform: translate3d(0, 30px, 0);
+      opacity: 0;
+    }
+ 
+    #mainContent #secondBox.active {
+   
+      
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+ 
+    
+  </style>
+</head>
+ 
+<body>
+  <div id="mainContent">
+  
+    <p id="firstBox">Phasellus tortor nisl, dapibus at posuere sed, tempor in massa. Pellentesque eu sodales orci, finibus congue libero. Mauris molestie bibendum posuere.</p>
+    <p>Nunc blandit varius sapien quis ultrices. Vestibulum et consequat augue. Pellentesque et maximus nisl, sit amet dictum ante.</p>
+    <p id="secondBox">Nullam magna augue, consequat eu augue ut, volutpat fringilla est. Ut commodo ac magna vulputate dictum.</p>
+  </div>
+ 
+  <script>
+    var isScrolling = false;
+ 
+    window.addEventListener("scroll", throttleScroll, false);
+ 
+    function throttleScroll(e) {
+      if (isScrolling == false) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+      }
+      isScrolling = true;
+    }
+ 
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+ 
+    var listItems = document.querySelectorAll("#mainContent ol li");
+    var firstBox = document.querySelector("#firstBox");
+    var secondBox = document.querySelector("#secondBox");
+ 
+    function scrolling(e) {
+ 
+      if (isPartiallyVisible(firstBox)) {
+        firstBox.classList.add("active");
+ 
+        document.body.classList.add("colorOne");
+        document.body.classList.remove("colorTwo");
+      } else {
+        document.body.classList.remove("colorOne");
+        document.body.classList.remove("colorTwo");
+      }
+ 
+      if (isFullyVisible(secondBox)) {
+        secondBox.classList.add("active");
+ 
+        document.body.classList.add("colorTwo");
+        document.body.classList.remove("colorOne");
+      }
+ 
+      for (var i = 0; i < listItems.length; i++) {
+        var listItem = listItems[i];
+ 
+        if (isPartiallyVisible(listItem)) {
+          listItem.classList.add("active");
+        } else {
+          listItem.classList.remove("active");
+        }
+      }
+    }
+ 
+    function isPartiallyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+      var height = elementBoundary.height;
+ 
+      return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+ 
+    function isFullyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+ 
+      return ((top >= 0) && (bottom <= window.innerHeight));
+    }
+  </script>
+</body>
+ 
+</html>

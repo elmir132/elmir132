@@ -1,0 +1,86 @@
+
+*{
+padding:0;
+margin:0;
+font-family: Canela Dec Web;  
+
+
+}
+
+#sidebar1{
+position: fixed;
+width: 1200px;
+height: 900px;
+padding-bottom: 10px;
+border-radius: 10px;
+background: #0e0e0e;
+border-right:4px solid crimson;
+right: -1205px;
+-moz-transition:all 600ms;
+-webkit-transition:all 600ms;
+transition:all 600ms;
+margin-top:1px;
+line-height: 90px;
+z-index:2;
+}
+
+#sidebar1.active{
+right: 250px;
+top:3px;
+z-index: 2;
+}
+
+#sidebar ul li:first-child {
+  text-align: center;
+  color: white;
+  font-size:1.95em;
+  list-style-type: none;
+  padding: 10px 10px 150px 10px;
+
+
+}
+#sidebar1 ul li:not(:first-child) {
+  width: 90%;
+  margin-left:350px;
+  color: white;
+  font-size:1.1em;
+  list-style-type: none;
+  padding: 15px 10px ;
+  font-size:70px;
+
+}
+#sidebar1 ul li a{
+
+color: #dfe5eb;
+text-decoration:none;
+
+}
+#sidebar1 ul li a:hover {color:#59ef23;}
+
+
+
+#sidebar1 .toggle-btn{
+position: absolute;
+right: 1225px;
+top: 20px;
+background: #E0E5EA;
+padding: 10px;   
+border-radius:12px;
+cursor: pointer;
+}
+
+#sidebar .toggle-btn:hover {background:#556270 } 
+#sidebar .toggle-btn:hover span {background:#fafafa } 
+#sidebar .toggle-btn span{
+display:block;
+width:25px;
+height:4px;
+background: #669;
+margin: 4px 0; 
+}
+
+
+
+
+
+

@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COVID</title>
+  <link rel="stylesheet" href="h.css">
+  <link rel="stylesheet" href="covid.css">
+  <link rel="stylesheet" href="covid2.css">
+  <link rel="stylesheet" href="covid3.css">
+  <link rel="icon" href="kny.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="anim3.css">
+
+
+<style>
+    body {
+      background-color: ;
+      transition: all 1s ease-in;
+    }
+
+    #mainContent #firstBox {
+      font-weight: bold;
+      transform: translate3d(-30px, 0, 0);
+      transition: all .5s ease-out;
+      opacity: 0;
+    }
+ 
+    #mainContent #firstBox.active {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+ 
+    #mainContent #secondBox {
+      transition: all .2s ease-in-out;
+      transform: translate3d(0, 30px, 0);
+      opacity: 0;
+    }
+ 
+    #mainContent #secondBox.active {
+   
+      
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+ 
+   #mainContent #thirdBox {
+      transition: all .2s ease-in-out;
+      transform: translate3d(0, 30px, 0);
+      opacity: 0;
+    }
+ 
+    #mainContent #thirdBox.active {
+   
+      
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+   #mainContent #fourBox {
+      transition: all .2s ease-in-out;
+      transform: translate3d(0, 30px, 0);
+      opacity: 0;
+    }
+ 
+    #mainContent #fourBox.active {
+   
+      
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+   #mainContent #fiveBox {
+      transition: all .2s ease-in-out;
+      transform: translate3d(0, 30px, 0);
+      opacity: 0;
+    }
+ 
+    #mainContent #fiveBox.active {
+   
+      
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+
+ 
+ 
+    
+</style>
+
+
+
+
+
+
+
+
+
+<style>
+    
+
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* фоновый цвет */
+      background: linear-gradient(137deg, #23C47A, #275FB5);
+      z-index: 1001;
+
+
+    }
+
+    .preloader__image {
+      position: relative;
+    
+     left: 50%;
+     top: 50vh;
+     margin: -100px 0 0 -100px;
+
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+
+
+  <style>
+   
+  A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration:underline  ;  /* Добавляем подчеркивание при наведении курсора на ссылку */
+    
+    color: red; /* Ссылка красного цвета */
+   } 
+
+
+.sign {
+    float: left;
+    border: 1px solid #333;
+    padding: 1px;
+    margin: 0px 0 0px 0px;
+    background: #f0f0f0;
+    margin-bottom: 1100px;
+        margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+   .sign figcaption {
+    margin: 0 auto 0px; /* Отступы вокруг абзаца */
+   }
+
+
+
+  h1 {
+    font-weight: normal; /* Нормальное начертание */
+   } 
+   .select {
+     /* Цвет текста */
+    font-weight: 600; /* Жирное начертание */
+   }
+
+
+
+   
+</style>
+</head>
+<body>
+  
+
+<!-------->
+
+
+<!-------->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+
+
+<script type="text/javascript">
+  
+"use strict";
+
+var main = function() {
+  $('.toggle-btn').click(function() {
+    $('.toggle-btn').hide();
+    $('.inv').show(); //added
+    $('.menu').animate({
+      left: "17%"
+    }, 260);
+  });
+  //Added
+  $('.inv').click(function() {
+    $('.inv').hide();
+    $('.menu').animate({
+      left: "94.5%" //1696
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+
+
+  $('.closed').click(function() {
+    $('.inv').hide(); //added
+    $('.menu').animate({
+      left: "95%"
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+};
+
+$(document).ready(main);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="inv" id="sidebar"></div><!-- Added an invisible block -->
+<div class="menu" id="sidebar"> <span ></span>
+
+
+<div class='toggle-btn'   >
+<span class="rir"></span>
+<span class="rir"></span>
+<span class="rir" ></span>
+</div>
+
+
+   <ul>
+  <li><a href="index.html">
+  <img src="KNU.png" alt="menu" style=" " class="knuu"></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style=" " class="wave"></a>
+</li>
+  <li><a href="Infrastructure.html">Infrastructure</a></li>
+  <li><a href="visit.html">Visit</a></li>
+  <li><a href="focus.html">In focus</a></li>
+  <li><a href=" covid.html">About Covid</a></li>
+  <li><a href="news.html">News</a></li>
+
+
+  <li></li>
+</ul>
+
+</div>
+<div class="toggle-btn" ; style= "display:contents"> <span ></span></div>
+
+
+
+
+
+<!----->
+<!----->
+
+<a href="index.html">
+  <img src="KNU.png" alt="menu" style="" class="knu">
+</a>
+  <a href="covid.html" ><div style=" " class="taf" >Covid-19 Information</div></a>
+<!----->
+
+
+<header style="" class="style">
+  <div class="block"> 
+  <h3 style="   "  class="fi" data-scroll="toggle(.scaleDownIn, .scaleDownOut) addHeight">Keep KNU healthy</h3>
+  </div>
+</header>
+
+
+
+<!-------------->
+
+
+<table class="text">
+   <tr>
+    
+
+    <td>
+
+
+
+
+<div id="mainContent">
+<section style="margin: 50px;padding-left:20px;padding-right:30px ">
+    <p  class="ww"  id="firstBox"><span class="select">We’re Healthier Together.</span></p>
+  <br>
+  <p class="pr" id="thirdBox" >Guided by our commitment to education and research and to the health and safety of our community, KNU continues to emphasize remote learning and work while allowing for the resumption of certain in-person activities, including the return of a limited population of students to campus.</p>
+  <br>
+  <p class="pr" >Supporting the wellbeing of community members while advancing KNU’s academic enterprise requires each of us to take steps to protect ourselves and others—whether by continuing to study or work remotely, or by following important health and safety protocols on campus.</p>  
+</section>
+</div>
+
+
+
+
+
+ <script>
+    var isScrolling = false;
+ 
+    window.addEventListener("scroll", throttleScroll, false);
+ 
+    function throttleScroll(e) {
+      if (isScrolling == false) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+      }
+      isScrolling = true;
+    }
+ 
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+ 
+    var listItems = document.querySelectorAll("#mainContent ol li");
+    var firstBox = document.querySelector("#firstBox");
+    var secondBox = document.querySelector("#secondBox");
+    var secondBox = document.querySelector("#thirdBox");
+   
+
+
+
+    function scrolling(e) {
+ 
+      if (isPartiallyVisible(firstBox)) {
+        firstBox.classList.add("active");
+ 
+        document.body.classList.add("colorOne");
+        document.body.classList.remove("colorTwo");
+      } else {
+        document.body.classList.remove("colorOne");
+        document.body.classList.remove("colorTwo");
+      }
+ 
+      if (isFullyVisible(secondBox)) {
+        secondBox.classList.add("active");
+ 
+        document.body.classList.add("colorTwo");
+        document.body.classList.remove("colorOne");
+      }
+       if (isFullyVisible(thirdBox)) {
+        thirdBox.classList.add("active");
+ 
+        document.body.classList.add("colorTwo");
+        document.body.classList.remove("colorOne");
+      }
+ 
+      for (var i = 0; i < listItems.length; i++) {
+        var listItem = listItems[i];
+ 
+        if (isPartiallyVisible(listItem)) {
+          listItem.classList.add("active");
+        } else {
+          listItem.classList.remove("active");
+        }
+      }
+    }
+ 
+    function isPartiallyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+      var height = elementBoundary.height;
+      
+
+
+      return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+ 
+    function isFullyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+    
+     
+      return ((top >= 0) && (bottom <= window.innerHeight));
+    }
+  </script>
+
+
+
+
+
+
+
+
+<!---
+
+<div id="mainContent">
+<p class="pr" id="thirdBox">Supporting the wellbeing of community members while advancing KNU’s academic enterprise requires each of us to take steps to protect ourselves and others—whether by continuing to study or work remotely, or by following important health and safety protocols on campus.</p>
+
+</div>
+
+
+
+
+
+
+
+
+
+ <script>
+    var isScrolling = false;
+ 
+    window.addEventListener("scroll", throttleScroll, false);
+ 
+    function throttleScroll(e) {
+      if (isScrolling == false) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+      }
+      isScrolling = true;
+    }
+ 
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+ 
+    var listItems = document.querySelectorAll("#mainContent ol li");
+    var firstBox = document.querySelector("#thirdBox");
+    var secondBox = document.querySelector("#fourBox");
+   
+   
+
+
+
+    function scrolling(e) {
+ 
+      if (isPartiallyVisible(firstBox)) {
+        firstBox.classList.add("active");
+ 
+        document.body.classList.add("colorOne");
+        document.body.classList.remove("colorTwo");
+      } else {
+        document.body.classList.remove("colorOne");
+        document.body.classList.remove("colorTwo");
+      }
+ 
+      if (isFullyVisible(secondBox)) {
+        secondBox.classList.add("active");
+ 
+        document.body.classList.add("colorTwo");
+        document.body.classList.remove("colorOne");
+      }
+ 
+      for (var i = 0; i < listItems.length; i++) {
+        var listItem = listItems[i];
+ 
+        if (isPartiallyVisible(listItem)) {
+          listItem.classList.add("active");
+        } else {
+          listItem.classList.remove("active");
+        }
+      }
+    }
+ 
+    function isPartiallyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+      var height = elementBoundary.height;
+
+
+      return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+ 
+    function isFullyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+     
+      return ((top >= 0) && (bottom <= window.innerHeight));
+    }
+  </script>
+
+
+
+
+---->
+
+
+
+
+
+
+
+
+
+
+<!-------------->
+<div class="block">
+
+<div style="margin-left: 17%"><img src="https://nov-rada.gov.ua/wp-content/uploads/2021/02/36_main.jpg" alt="Coronavirus" class="anim-show"  data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once" ></div>
+
+<div style="margin-left: 9%"><img src="https://www.treehugger.com/thmb/TIIXohT4ZWoSnGcfawTGHWKpOTA=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1221094562-32fe5cde056b4875a8f7c9ad166890e2.jpg" alt="healthy way of live" class="anim-show2" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once"></div>
+
+<div style="  padding-top: 440px;padding-bottom: 760px; margin-left: 9%"><img src="https://collegecountdown.scholarshare529.com/wp-content/uploads/2020/07/hero-spring-resources2-2020.jpg" class="anim-show3" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once" alt="healthy way of live" ></div>
+
+
+</div>
+
+
+
+
+
+<div class="block">
+
+<a href="impact.html">  
+
+  <figure class="sign" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once" >
+   <p><img src="https://cdn.britannica.com/18/194818-050-E7A7A993/view-Kiev-Ukraine.jpg" class="class"  alt="Community" style=" "></p>
+   <figcaption >
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <p class="dada" style=" "><span class="select">KNU impact to socium </p>
+  <p style="font-family:GT America Standart Regular;font-size:18px; margin-bottom: 40px;margin-left: 20px ;background-color: #e3e5e5;color:black">From crisis management resources, health and legal services, to educational programming, KNU is actively working to support community members.</p>
+
+
+   </figcaption>
+  </figure>
+</div>
+</a>
+
+<!------------------------------------------------------------------------------------------------------>
+<section >
+<div class="block">
+<p style=" " class="f"><span class="select">Need help connecting to the right resource? </p>
+<p style="font-family:  Canela Dec Web ;line-height: 0.3;font-size: 56px;padding-right: 10px;padding-top:1px;float: center  ;margin-left: 100px;margin-top: 20px;color:black; "><span class="select"> Call the COVID Resource  </p>
+<p style=" " class="classs"><span class="select"> Connector:</p>
+
+  <p style=" " class="classs"><span class="select" data-scroll="toggle(.scaleDownIn, .scaleDownOut) addHeight"><a href="tel:(044) 233-0101" style=" text-decoration: none;
+    color: black;" >(044) 233-0101<a></p>
+</div>
+</section>
+
+
+
+
+
+
+<!------------------------------------------------------------------------------------------------------>
+
+<!---
+  <div><img src="https://cdn.britannica.com/18/194818-050-E7A7A993/view-Kiev-Ukraine.jpg" alt="Community" style="float:left;padding-right:70px;padding-bottom:70px ;width:750px;padding-left:140px;padding-top:500px;">
+  
+  <h3  style="font-family:Canela Dec Web ;font-size: 48px;padding-right: 100px;padding-top:10px;  "><span class="select">KNU impact to socium </span></h1>
+  <p style="font-family:GT America Standart Regular;font-size: 18;margin-bottom: 32px;background-color: #e3e5e5;">From crisis management resources, health and legal services, to educational programming, Harvard is actively working to support community members.</p></div>
+
+</nav>
+</footer>
+</a>
+
+---->
+<!-------------->
+
+</section>
+    </td>
+    
+
+
+    <td style="" class="rightcol">
+
+<section class="pp">
+  <div style="block">
+  <p style="font-size:14px;letter-spacing: -.1px;background-size: 0 1px;transition: all .3s;position: relative;line-height: 2;font-family:GT Amirica Standart Medium; color:#292c2f;padding: : 16px; " >
+    <span class="select">
+        <a href="covid.html" style="color:#292c2f;font-family:GT Amirica Standart Bold; " data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">>  KEEP KNU HEALTHY <</a>
+      </span>
+      </p>
+    
+
+    <p style="font-size:20px;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight"><span class="select">
+      <a href="health.html" style="color:#292c2f;font-family:GT Amirica Standart Bold;font-weight: 300px">Health</a>
+    </span>
+    </p>
+
+    <p style="font-size:20px;letter-spacing: -.1px;background-size: 0 1px;transition: all .3s;position: relative;line-height: 2;font-family:GT Amirica Standart Bold; color:#292c2f;padding: : 16px;border-top: 1px solid #bac5c6;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight"><span class="select">
+      <a href="campus.html" style="color:#292c2f;font-family:GT Amirica Standart Bold;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">Campus</a>
+    <span></p>
+    <p style="font-size:20px;letter-spacing: -.1px;background-size: 0 1px;transition: all .3s;position: relative;line-height: 2;font-family:GT Amirica Standart Bold; color:#292c2f;padding: : 16px;border-top: 1px solid #bac5c6;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight"><span class="select">
+      <a href="vacinne.html" style="color:#292c2f;">Vacinne</a>
+    </span></p>
+    <p style="font-size:20px;letter-spacing: -.1px;background-size: 0 1px;transition: all .3s;position: relative;line-height: 2;font-family:GT Amirica Standart Bold; color:#292c2f;padding: : 16px;border-top: 1px solid #bac5c6;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight"><span class="select">
+      <a href="education.html" style="color:#292c2f;">Education</a>
+    </span></p>
+    <p style="font-size:20px;letter-spacing: -.1px;background-size: 0 1px;transition: all .3s;position: relative;line-height: 2;font-family:GT Amirica Standart Bold; color:#292c2f;padding: : 16px;border-top: 1px solid #bac5c6;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight"><span class="select">
+      <a href="caises.html" style="color:#292c2f;">Latest information about positive caises</a>
+    </span></p>
+    <p style="font-size:20px;letter-spacing: -.1px;background-size: 0 1px;transition: all .3s;position: relative;line-height: 2;font-family:GT Amirica Standart Bold; color:#292c2f;padding: : 16px;border-top: 1px solid #bac5c6;" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight"><span class="select">
+      <a href="communication.html" style="color:#292c2f;">Communication</a>
+    
+
+
+
+    </span></p>
+
+  </div>
+</section>
+<!-------------->
+
+<main style=" " class="back">
+    
+
+
+<section style="color:white ;" >
+  <div class="block">
+  <h1 style=" " class="hhh" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once" > Before Returning to Campus</h1>
+<p style="" class="ppp" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight once">We have an individual and collective responsibility to keep ourselves and our community members safe. All community members are expected to adhere to University policies and public health directives.</p>
+</div >
+</section>
+
+
+
+
+<div class="block">
+<!-------------->
+<img src="GIF.GIF" alt="Go down" width="272" height="200"  style="padding-right:50px;padding-top:250px " >
+
+
+
+
+
+<section style="color:white ;">
+  <div class="block">
+  <h1 style="font-family:Canela Dec Web ;padding-top:200px  " class="hhh" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once" >Make Healthy Way</h1>
+<p style="margin-bottom: 32px;" class="ppp" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight once">There are a few simple measures we can take to greatly reduce the risk and spread of COVID-19. Show you care for your fellow neighbors, classmates, family, and friends, and help hold each other accountable. The more diligent and careful we are now, the sooner we’ll be able to resume more in-person activities and welcome back more of our campus community.</p></section>>
+</div>
+<img src="GIF.GIF" alt="Go down" width="272" height="200"  style="padding-right:50px;padding-top:170px " >
+
+
+
+
+
+<section style="color:white ;">
+  <div class="block">
+  <h1 style="padding-top:300px" class="hhh" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Isolation & Quarantine</h1>
+<p style="margin-bottom: 32px;" class="ppp" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight once">Isolation and quarantine are ways to keep healthy individuals separated from individuals who have tested positive for COVID-19 or from close contacts of individuals who have tested positive. KNU has developed quarantine and isolation procedures to reduce the risk of outbreaks on campus and to provide the necessary support for individuals who may need to quarantine or isolate.
+</div>
+</p>
+
+
+
+
+</section>
+<div class="block">
+<img src="GIF.GIF" alt="Go down" width="272" height="200"  style="padding-right:50px;padding-top:300px " >
+
+
+<section style="color:white ;">
+  <h1 style="font-family:Canela Dec Web ;font-size: 48px;padding-right: 100px;padding-top:500px  " data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">Support</h1></section>>
+
+<img src="GIF.GIF" alt="Go down" width="272" height="200"  style="" class="gif"   >
+
+<img src="GIF.GIF" alt="Go down" width="272" height="200"  style="padding-top:1400px ;  " class="gif1" >
+
+<h1 style=" " class="protect"><span class="select" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">Protect Yourself And Others </span></h1>
+</div>
+
+</div>
+
+ <script src="anim.js"></script>
+   <script>
+   window.counter = function() {
+      // this refers to the html element with the data-scroll-showCallback tag
+      var span = this.querySelector('span');
+      var current = parseInt(span.textContent);
+      
+      span.textContent = current + 1;
+   };
+
+   document.addEventListener('DOMContentLoaded', function(){
+     ScrollTrigger.init();
+   });
+   </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</main>
+
+<!-------------->
+
+
+
+
+
+<!----->
+
+
+
+<div class="preloader">
+<div class="loader" id="loader" >
+  <div>
+    <ul>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 76%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+    </ul>
+  </div><span>Loading</span>
+</div>
+</div>
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+
+
+
+<!----->
+
+
+
+
+
+<footer >
+
+
+
+</footer>
+
+<!-------------->
+
+
+  </td>
+   </tr>
+  </table>
+
+
+
+
+
+
+<!----->
+<section style="background-color: black; padding: 10px" class="buk">
+  <h3 ><i>Site was designed by Elmir Abdullaev<i></h3>
+  <a href="https://www.instagram.com/elmirabdullaev/"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="insta" style="float:center;width:42px;height:42px; "></a>
+
+  <a href="https://t.me/spu_knu"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/600px-Telegram_logo.svg.png" alt="insta" style="float:center;width:42px;height:42px; "></a>
+
+<span style="text-align: right;color:white" class="pap"><i> *site was designed by Elmir Abdullaev<i></span>
+</section>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Focus</title>
+	<link rel="stylesheet" type="text/css" href="climate.css">
+  <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="climat5.css">
+    <link rel="icon" href="kny.png">
+    <link rel="stylesheet" href="n.css">
+  <style>
+   
+* {
+    box-sizing: border-box;
+    position: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+ background: rgba(0, 0, 0, 0.5);
+
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;
+
+}
+
+
+
+#myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover {
+    background: #ddd;
+    color: black;
+
+
+
+
+	A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration:underline  ;  /* Добавляем подчеркивание при наведении курсора на ссылку */
+     text-decoration-thickness: 0.1em;
+  text-decoration-thickness: 3px;
+    color: white; /* Ссылка красного цвета */
+   } 
+
+
+ .sign {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 1px; /* Поля внутри блока */
+    margin: 0px 0 0px 0px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+   margin-bottom: 1100px;
+   }
+   .sign figcaption {
+    margin: 0 auto 0px; /* Отступы вокруг абзаца */
+   }
+
+
+
+	h1 {
+    font-weight: normal; /* Нормальное начертание */
+   } 
+   .select {
+     /* Цвет текста */
+    font-weight: 600; /* Жирное начертание */
+   }
+
+
+
+   table.text  {
+    width:  100%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+   }
+   table.text td {
+    width: 50%; /* Ширина ячеек */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+   }
+   td.rightcol { /* Правая ячейка */ 
+    text-align: right; /* Выравнивание по правому краю */
+   }
+  </style>
+</head>
+<body style=" ;background: linear-gradient(
+180deg
+,hsla(0,0%,88%,0) 29.9%,#f3f4f4);
+    left: 0;
+    width: 100%;
+    height: 100%;">
+	
+
+<!-------->
+
+<!-------->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+
+
+<script type="text/javascript">
+  
+"use strict";
+
+var video = function () {
+  $('.toggle-btn').click(function() {
+    $('.toggle-btn').hide();
+    $('.inv').show(); //added
+    $('.menu').animate({
+      left: "17%"
+    }, 260);
+  });
+  //Added
+  $('.inv').click(function() {
+    $('.inv').hide();
+    $('.menu').animate({
+      left: "94.5%" //1696
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+
+
+  $('.closed').click(function() {
+    $('.inv').hide(); //added
+    $('.menu').animate({
+      left: "95%"
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+};
+
+
+
+$(document).ready(video);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="inv" id="sidebar"></div><!-- Added an invisible block -->
+<div class="menu" id="sidebar"> <span ></span>
+
+
+<div class='toggle-btn'   >
+<span class="rir"></span>
+<span class="rir"></span>
+<span class="rir" ></span>
+</div>
+
+
+   <ul>
+  <li><a href="index.html">
+  <img src="KNU.png" alt="menu" style=" " class="knuu"></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style=" " class="wave"></a>
+</li>
+  <li><a href="Infrastructure.html">Infrastructure</a></li>
+  <li><a href="visit.html">Visit</a></li>
+  <li><a href="focus.html">In focus</a></li>
+  <li><a href=" covid.html">About Covid</a></li>
+  <li><a href="news.html">News</a></li>
+   <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="anim3.css">
+  <li></li>
+</ul>
+
+</div>
+<div class="toggle-btn" ; style= "display:contents"> <span ></span></div>
+
+
+
+<!----->
+
+   
+   <script src="anim.js"></script>
+   <script>
+   window.counter = function() {
+      // this refers to the html element with the data-scroll-showCallback tag
+      var span = this.querySelector('span');
+      var current = parseInt(span.textContent);
+      
+      span.textContent = current + 1;
+   };
+
+   document.addEventListener('DOMContentLoaded', function(){
+     ScrollTrigger.init();
+   });
+   </script>
+
+
+
+
+
+<!----->
+
+
+
+<video autoplay muted loop id="myVideo" style="z-index: -1;">
+  <source src="green.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+
+
+
+<div class="content">
+  
+
+
+<!----->
+<!------------------->
+
+
+<header>
+  <nav class="dws-menu" onclick="openMennu()" style="float: center;">
+    <ul>
+    
+      <li style="text-decoration:none;"><a href="#"><i class="fa fa-shopping-cart"></i>Climat</a>
+        <ul style=" background-color: black;border-radius: 40px;padding: 20px; text-align: center;z-index: 2;">
+          <li ><a href="climat2.html">Climat</a></li>
+          <li><a href="meditation.html">Meditation</a></li>
+           <li><a href="vacine.html">Vacinne</a></li>           
+          
+          
+          
+        </ul>
+      
+    </ul>
+  </nav>
+
+
+<script type="text/javascript">
+  function openMennu(){
+
+document .getElementById("dws-menu").classList.toggle("active");
+  
+  } 
+
+</script>
+</header>
+
+
+<!------------------->
+<!----->
+  <div class="block">
+  <h1 class="big" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight" >Climate</h1>
+  <p class="min" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight">Climate Change is a real and serious issue.The KNU community is taking a multi-faceted approach to addressing and reversing the effects of this crisis.Climate change is one of the most complicated and challenging problems the world has ever faced.It is a global problem, and one that requires global action to manage the impacts and minimize the risks.  Here at KNU, we are fortunate enough to have faculty members with expertise, across many disciplines, who contribute through their teaching, their research, and their leadership to a broad effort to help lead the world toward solutions. </p>
+</div>
+<!---<button id="abd"  style="margin-top: 40px">DAAA
+
+</button>------>
+
+
+
+
+<a href="index.html">
+  <img src="KNU.png" alt="menu" style=" " class="knu">
+
+
+</a>
+  <button id="myBtn" onclick="myFunction()" style="" class="pase">Pause</button>
+</div>
+
+<script>
+var video = document.getElementById("myVideo");
+var btn = document.getElementById("myBtn");
+
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
+
+</body>
+</html>
