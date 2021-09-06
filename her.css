@@ -1,0 +1,436 @@
+
+.loader {
+    --background: linear-gradient(135deg, #23c4f8, #275efe);
+    --shadow: rgba(39, 94, 254, 0.28);
+    --text: #275F8F;
+    --page: rgba(255, 255, 255, 0.36);
+    --page-fold: rgba(255, 255, 255, 0.52);
+    --duration: 3s;
+    width: 200px;
+    height: 140px;
+    position: unset;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 203px;
+    height: 141px;
+}
+.loader:before, .loader:after {
+  --r: -6deg;
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  width: 120px;
+  top: 80%;
+  box-shadow: 0 16px 12px var(--shadow);
+  transform: rotate(var(--r));
+}
+.loader:before {
+  left: 4px;
+}
+.loader:after {
+  --r: 6deg;
+  right: 4px;
+}
+.loader div {
+  width: 100%;
+  height: 100%;
+  border-radius: 13px;
+  position: relative;
+  z-index: 1;
+  perspective: 600px;
+  box-shadow: 0 4px 6px var(--shadow);
+  background-image: var(--background);
+}
+.loader div ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+.loader div ul li {
+  --r: 180deg;
+  --o: 0;
+  --c: var(--page);
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  transform-origin: 60% 50%;
+  color: var(--c);
+  opacity: var(--o);
+  transform: rotateY(var(--r));
+  -webkit-animation: var(--duration) ease infinite;
+          animation: var(--duration) ease infinite;
+}
+.loader div ul li:nth-child(2) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-2;
+          animation-name: page-2;
+}
+.loader div ul li:nth-child(3) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-3;
+          animation-name: page-3;
+}
+.loader div ul li:nth-child(4) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-4;
+          animation-name: page-4;
+}
+.loader div ul li:nth-child(5) {
+  --c: var(--page-fold);
+  -webkit-animation-name: page-5;
+          animation-name: page-5;
+}
+.loader div ul li svg {
+  width: 90px;
+  height: 120px;
+  display: block;
+}
+.loader div ul li:first-child {
+  --r: 0deg;
+  --o: 1;
+}
+.loader div ul li:last-child {
+  --o: 1;
+}
+.loader span {
+  display: block;
+  left: 0;
+  right: 0;
+  top: 100%;
+  margin-top: 20px;
+  text-align: center;
+  color: var(--text);
+}
+
+@-webkit-keyframes page-2 {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+  }
+  50%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+
+@keyframes page-2 {
+  0% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  35%, 100% {
+    opacity: 0;
+  }
+  50%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes page-3 {
+  15% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+  65%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes page-3 {
+  15% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  35% {
+    opacity: 1;
+  }
+  50%, 100% {
+    opacity: 0;
+  }
+  65%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes page-4 {
+  30% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65%, 100% {
+    opacity: 0;
+  }
+  80%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes page-4 {
+  30% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  65%, 100% {
+    opacity: 0;
+  }
+  80%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@-webkit-keyframes page-5 {
+  45% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+  95%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+@keyframes page-5 {
+  45% {
+    transform: rotateY(180deg);
+    opacity: 0;
+  }
+  65% {
+    opacity: 1;
+  }
+  80%, 100% {
+    opacity: 0;
+  }
+  95%, 100% {
+    transform: rotateY(0deg);
+  }
+}
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: inherit;
+}
+*:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html,
+body {
+  overflow: hidden;
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  perspective: 40em;
+  background: black;
+
+}
+
+.roller {
+  transform-style: preserve-3d;
+  animation: rot 20s linear infinite;
+}
+.roller,
+.roller * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.slice {
+  margin: -50vh -4.92457vw;
+  width: 9.84914vw;
+  height: 100vh;
+  backface-visibility: hidden;
+  background: url(http://androidforensicphotography.files.wordpress.com/2012/06/canal-rocks-360-degrees.jpg);
+  background-size: 315.17249vw 100%;
+}
+.slice:nth-child(1) {
+  transform: rotateY(0deg) translateZ(-49vw);
+  background-position: 0vw 50%;
+}
+.slice:nth-child(2) {
+  transform: rotateY(11.25deg) translateZ(-49vw);
+  background-position: 9.84914vw 50%;
+}
+.slice:nth-child(3) {
+  transform: rotateY(22.5deg) translateZ(-49vw);
+  background-position: 19.69828vw 50%;
+}
+.slice:nth-child(4) {
+  transform: rotateY(33.75deg) translateZ(-49vw);
+  background-position: 29.54742vw 50%;
+}
+.slice:nth-child(5) {
+  transform: rotateY(45deg) translateZ(-49vw);
+  background-position: 39.39656vw 50%;
+}
+.slice:nth-child(6) {
+  transform: rotateY(56.25deg) translateZ(-49vw);
+  background-position: 49.2457vw 50%;
+}
+.slice:nth-child(7) {
+  transform: rotateY(67.5deg) translateZ(-49vw);
+  background-position: 59.09484vw 50%;
+}
+.slice:nth-child(8) {
+  transform: rotateY(78.75deg) translateZ(-49vw);
+  background-position: 68.94398vw 50%;
+}
+.slice:nth-child(9) {
+  transform: rotateY(90deg) translateZ(-49vw);
+  background-position: 78.79312vw 50%;
+}
+.slice:nth-child(10) {
+  transform: rotateY(101.25deg) translateZ(-49vw);
+  background-position: 88.64226vw 50%;
+}
+.slice:nth-child(11) {
+  transform: rotateY(112.5deg) translateZ(-49vw);
+  background-position: 98.4914vw 50%;
+}
+.slice:nth-child(12) {
+  transform: rotateY(123.75deg) translateZ(-49vw);
+  background-position: 108.34054vw 50%;
+}
+.slice:nth-child(13) {
+  transform: rotateY(135deg) translateZ(-49vw);
+  background-position: 118.18968vw 50%;
+}
+.slice:nth-child(14) {
+  transform: rotateY(146.25deg) translateZ(-49vw);
+  background-position: 128.03882vw 50%;
+}
+.slice:nth-child(15) {
+  transform: rotateY(157.5deg) translateZ(-49vw);
+  background-position: 137.88796vw 50%;
+}
+.slice:nth-child(16) {
+  transform: rotateY(168.75deg) translateZ(-49vw);
+  background-position: 147.73711vw 50%;
+}
+.slice:nth-child(17) {
+  transform: rotateY(180deg) translateZ(-49vw);
+  background-position: 157.58625vw 50%;
+}
+.slice:nth-child(18) {
+  transform: rotateY(191.25deg) translateZ(-49vw);
+  background-position: 167.43539vw 50%;
+}
+.slice:nth-child(19) {
+  transform: rotateY(202.5deg) translateZ(-49vw);
+  background-position: 177.28453vw 50%;
+}
+.slice:nth-child(20) {
+  transform: rotateY(213.75deg) translateZ(-49vw);
+  background-position: 187.13367vw 50%;
+}
+.slice:nth-child(21) {
+  transform: rotateY(225deg) translateZ(-49vw);
+  background-position: 196.98281vw 50%;
+}
+.slice:nth-child(22) {
+  transform: rotateY(236.25deg) translateZ(-49vw);
+  background-position: 206.83195vw 50%;
+}
+.slice:nth-child(23) {
+  transform: rotateY(247.5deg) translateZ(-49vw);
+  background-position: 216.68109vw 50%;
+}
+.slice:nth-child(24) {
+  transform: rotateY(258.75deg) translateZ(-49vw);
+  background-position: 226.53023vw 50%;
+}
+.slice:nth-child(25) {
+  transform: rotateY(270deg) translateZ(-49vw);
+  background-position: 236.37937vw 50%;
+}
+.slice:nth-child(26) {
+  transform: rotateY(281.25deg) translateZ(-49vw);
+  background-position: 246.22851vw 50%;
+}
+.slice:nth-child(27) {
+  transform: rotateY(292.5deg) translateZ(-49vw);
+  background-position: 256.07765vw 50%;
+}
+.slice:nth-child(28) {
+  transform: rotateY(303.75deg) translateZ(-49vw);
+  background-position: 265.92679vw 50%;
+}
+.slice:nth-child(29) {
+  transform: rotateY(315deg) translateZ(-49vw);
+  background-position: 275.77593vw 50%;
+}
+.slice:nth-child(30) {
+  transform: rotateY(326.25deg) translateZ(-49vw);
+  background-position: 285.62507vw 50%;
+}
+.slice:nth-child(31) {
+  transform: rotateY(337.5deg) translateZ(-49vw);
+  background-position: 295.47421vw 50%;
+}
+.slice:nth-child(32) {
+  transform: rotateY(348.75deg) translateZ(-49vw);
+  background-position: 305.32335vw 50%;
+}
+
+@keyframes rot {
+  to {
+    transform: rotateY(1turn);
+  }
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="healt.css">
+  <link rel="stylesheet" href="impact.css">
+  <title>COVID</title>
+  <link rel="icon" href="kny.png">
+  <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="anim3.css">
+	
+  <style>
+    
+ body {
+background: rgb(255,255,255);
+background: linear-gradient(180deg, rgba(255,255,255,1) 60%, rgba(255,244,248,1) 69%);
+
+ 
+    }
+   
+ 
+    .colorOne {
+      background-color:;  color: #000;
+    }
+ 
+
+    .colorTwo {
+      background-image:url(https://images.unsplash.com/photo-1508439192733-e7448b721adc?ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDV8fHxlbnwwfHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60); background-repeat:no-repeat;background-attachment: fixed;background-size: cover;
+      color: #000;
+    }
+ 
+
+  
+ 
+   
+  </style>
+
+
+
+
+
+
+
+
+
+<style>
+    
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* фоновый цвет */
+      background: linear-gradient(137deg, #23C47A, #275FB5);
+      z-index: 1001;
+
+
+    }
+
+    .preloader__image {
+      position: relative;
+    
+     left: 50%;
+     top: 50vh;
+     margin: -100px 0 0 -100px;
+
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+
+
+  <style>
+   
+
+
+
+  <style>
+   
+A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration:wavy underline  ;  /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red; /* Ссылка красного цвета */
+   } 
+
+
+
+ .sign {
+    float: right; /* Выравнивание по правому краю */
+    border: 1px solid #333; /* Параметры рамки */
+    padding: 1px; /* Поля внутри блока */
+    margin: 0px 0 0px 0px; /* Отступы вокруг */
+    background: #f0f0f0; /* Цвет фона */ 
+   }
+   .sign figcaption {
+    margin: 0 auto 0px; /* Отступы вокруг абзаца */
+   }
+
+
+
+	h1 {
+    font-weight: normal; /* Нормальное начертание */
+   } 
+   .select {
+     /* Цвет текста */
+    font-weight: 600; /* Жирное начертание */
+   }
+
+
+
+   table.text  {
+    width:  100%; /* Ширина таблицы */
+    border-spacing: 0; /* Расстояние между ячейками */
+   }
+   table.text td {
+    width: 50%; /* Ширина ячеек */
+    vertical-align: top; /* Выравнивание по верхнему краю */
+   }
+   td.rightcol { /* Правая ячейка */ 
+    text-align: right; /* Выравнивание по правому краю */
+   }
+  </style>
+</head>
+<body>
+	
+<!-------->
+
+<!-------->
+
+
+<!-------->
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+
+
+<script type="text/javascript">
+  
+"use strict";
+
+var main = function() {
+  $('.toggle-btn').click(function() {
+    $('.toggle-btn').hide();
+    $('.inv').show(); //added
+    $('.menu').animate({
+      left: "17%"
+    }, 260);
+  });
+  //Added
+  $('.inv').click(function() {
+    $('.inv').hide();
+    $('.menu').animate({
+      left: "94.5%" //1696
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+
+
+  $('.closed').click(function() {
+    $('.inv').hide(); //added
+    $('.menu').animate({
+      left: "95%"
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+};
+
+$(document).ready(main);
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<div class="inv" id="sidebar"></div><!-- Added an invisible block -->
+<div class="menu" id="sidebar"> <span ></span>
+
+
+<div class='toggle-btn'   >
+<span class="rir"></span>
+<span class="rir"></span>
+<span class="rir" ></span>
+</div>
+
+
+   <ul>
+  <li><a href="index.html">
+  <img src="KNU.png" alt="menu" style=" " class="knuu"></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style=" " class="wave"></a>
+</li>
+  <li><a href="Infrastructure.html">Infrastructure</a></li>
+  <li><a href="visit.html">Visit</a></li>
+  <li><a href="focus.html">In focus</a></li>
+  <li><a href=" covid.html">About Covid</a></li>
+  <li><a href="news.html">News</a></li>
+
+
+  <li></li>
+</ul>
+
+</div>
+<div class="toggle-btn" ; style= "display:contents"> <span ></span></div>
+
+
+
+
+
+<!----->
+<!----->
+
+
+<!----->
+<!----->
+
+<a href="index.html">
+	<img src="KNU.png" alt="menu" style="float:left ; width: :162px ; height:92px; ">
+</a>
+	<a href="covid.html" ><div style="" class="cov" >Covid-19 Information</div></a>
+
+
+<!----->
+
+
+
+
+<header style="background-image:url(https://theculturetrip.com/wp-content/uploads/2017/10/_-_-2.jpg); background-repeat:no-repeat;background-attachment: fixed;background-size: cover;">
+  <div class="block">
+	<h3 style="  " class="hhhh" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">COVID-19 COMMUNITY RESOURCES</h3>
+</div>
+</header> 
+
+
+
+
+<!----->
+
+
+
+<div class="preloader">
+<div class="loader" id="loader" >
+  <div>
+    <ul>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 76%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+    </ul>
+  </div><span>Loading</span>
+</div>
+</div>
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+
+
+
+<!----->
+
+
+
+<div id="mainContent">
+
+<div class="test" contenteditable style="font-size: 100px; margin-top: 600px" id="secondBox">
+  Your life 
+  <p class="small">– in – <p/>
+  Your hand
+  <p class="small">(keep yourself healthy)</p>
+  <p class="smaller">(keep yourself tuned)</p>
+</div>
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+
+    
+    <filter id="squiggly-0">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="0"/>
+      <feDisplacementMap id="displacement" in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="squiggly-1">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="1"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+    
+    <filter id="squiggly-2">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="2"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+    <filter id="squiggly-3">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="3"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="8" />
+    </filter>
+    
+    <filter id="squiggly-4">
+      <feTurbulence id="turbulence" baseFrequency="0.02" numOctaves="3" result="noise" seed="4"/>
+<feDisplacementMap in="SourceGraphic" in2="noise" scale="6" />
+    </filter>
+  </defs> 
+</svg>
+
+
+ 
+  </script>
+
+
+<div class="block">
+<p style="text-align: center;color:black ;font-size:45px;text-align: center;margin-bottom:25px;padding-top:300px ;font-family:Brush Script MT " id="firstBox"><span class="select">
+  *For more on KNU's research and impact,visit the <a href="http://kunews.knu.ua/" style="text-decoration: none" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">KNU Gazette Coronavirus Update.</a >
+<span></p>
+<p style="text-align: center;color:black ;font-size:40px;text-align: center;margin-bottom:25px;font-family: Brush Script MT ;line-height:120px "><span class="select">
+  For more information and regular updates on University operations related to the pandemic, visit <a href="covid.html" style="text-decoration: none" data-scroll="toggle(.fromLeftIn, .fromLeftOut) addHeight once">KNU's coronavirus website</a>.
+</p><span >
+
+
+<main style="background: linear-gradient(360deg,hsla(50,28%,88%,50) 15.2%,#cceeff );left: 0;width: 100%;height: 100%;margin-top:500px ;padding-bottom: 5px ;" >
+  <p  style="text-align:left;color:black ;font-size:50px;text-align: center;padding-top: 30px"><span class="select" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Take Care Together</span></p>
+  <br>
+  <p style="color:black ;font-size:25px;text-align: center;margin-bottom:50px;padding-top: 40px " data-scroll="toggle(.fromBottomIn, .fromBottomOut) addHeight">In a time of unprecedented challenges, KNU students, faculty, and staff remain deeply committed to the communities the University calls home. Whether it be through cutting-edge research, support for healthcare workers, or resources for neighbors, local businesses and nonprofits, KNU is grateful to work alongside state, local, and community partners in Cambridge, Boston, JSU ,Ohio State University and beyond to respond to
+critical needs in the face of COVID-19.
+ </p>
+
+
+
+   <script src="anim.js"></script>
+   <script>
+   window.counter = function() {
+      // this refers to the html element with the data-scroll-showCallback tag
+      var span = this.querySelector('span');
+      var current = parseInt(span.textContent);
+      
+      span.textContent = current + 1;
+   };
+
+   document.addEventListener('DOMContentLoaded', function(){
+     ScrollTrigger.init();
+   });
+   </script>
+
+
+
+<section style="padding-top: 200px;margin-bottom: 1px">
+<img src="http://pngimg.com/uploads/cloud/small/cloud_PNG16.png" alt="cloud" style=" " class="p1" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/cloud_PNG14.png" alt="cloud"style="" class="ppp1" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/small/cloud_PNG16.png" alt="cloud"style="" class="p3" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/cloud_PNG19.png" alt="cloud"  style="" class="p4" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/cloud_PNG32.png" alt="cloud"style="" class="ppp2" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/cloud_PNG18.png" alt="cloud"style="" class="p5" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/cloud_PNG17.png" alt="cloud"style="" class="ppa" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+<img src="http://pngimg.com/uploads/cloud/cloud_PNG0.png" alt="cloud"style="" class="ppb" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight">
+
+
+
+
+
+
+
+<section style=" padding: 10px;margin-top: 1px;;margin-bottom: 1px">
+  
+  <a href="https://www.instagram.com/elmirabdullaev/"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="insta" style="float:center;width:42px;height:42px; "></a>
+
+  <a href="https://t.me/spu_knu"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/600px-Telegram_logo.svg.png" alt="insta" style="width:42px;height:42px; "></a>
+
+<span style="color:white;"><i> *site was designed by Elmir Abdullaev<i></span>
+</section>
+
+</div>
+</section>
+  <script>
+    var isScrolling = false;
+ 
+    window.addEventListener("scroll", throttleScroll, false);
+ 
+    function throttleScroll(e) {
+      if (isScrolling == false) {
+        window.requestAnimationFrame(function() {
+          scrolling(e);
+          isScrolling = false;
+        });
+      }
+      isScrolling = true;
+    }
+ 
+    document.addEventListener("DOMContentLoaded", scrolling, false);
+ 
+    var listItems = document.querySelectorAll("#mainContent ol li");
+    var firstBox = document.querySelector("#firstBox");
+    var secondBox = document.querySelector("#secondBox");
+ 
+    function scrolling(e) {
+ 
+      if (isPartiallyVisible(firstBox)) {
+        firstBox.classList.add("active");
+ 
+        document.body.classList.add("colorOne");
+        document.body.classList.remove("colorTwo");
+      } else {
+        document.body.classList.remove("colorOne");
+        document.body.classList.remove("colorTwo");
+      }
+ 
+      if (isFullyVisible(secondBox)) {
+        secondBox.classList.add("active");
+ 
+        document.body.classList.add("colorTwo");
+        document.body.classList.remove("colorOne");
+      }
+ 
+      for (var i = 0; i < listItems.length; i++) {
+        var listItem = listItems[i];
+ 
+        if (isPartiallyVisible(listItem)) {
+          listItem.classList.add("active");
+        } else {
+          listItem.classList.remove("active");
+        }
+      }
+    }
+ 
+    function isPartiallyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+      var height = elementBoundary.height;
+ 
+      return ((top + height >= 0) && (height + window.innerHeight >= bottom));
+    }
+ 
+    function isFullyVisible(el) {
+      var elementBoundary = el.getBoundingClientRect();
+ 
+      var top = elementBoundary.top;
+      var bottom = elementBoundary.bottom;
+ 
+      return ((top >= 0) && (bottom <= window.innerHeight));
+    }
+  </script>
+
+</div>
+</main>
