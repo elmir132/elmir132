@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="this is cool site">
+  <meta name="author" content="Elmir">
+  <meta name="keywords" content="HTML,Tutorial,Apple,Programming">
+  <meta name="viewport" content="width=device-width">
+  <title>KB-21 website</title>
+
+<link rel="stylesheet" type="text/css" href="knopka.css">
+<link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,500,700" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="anim3.css">
+   <link rel="icon" href="kny.png">
+  <link rel="stylesheet" href="jq.ss">
+  <link rel="stylesheet" href="html.css">
+  <link rel="stylesheet" href="quote.css">
+  <link rel="stylesheet" href="indexxx.css">
+<script defer src="simple-adaptive-slider.min.js"></script>
+ <link rel="stylesheet" href="preload.cs">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Indie+Flower&family=Lato&display=swap" rel="stylesheet">
+     
+
+     <style>
+    body {
+      margin: 0;
+    }
+
+    .preloader {
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      /* фоновый цвет */
+      background: linear-gradient(137deg, #23C47A, #275FB5);
+      z-index: 1001;
+
+
+    }
+
+    .preloader__image {
+      position: relative;
+    
+     left: 50%;
+     top: 50vh;
+     margin: -100px 0 0 -100px;
+
+      text-align: center;
+      animation: preloader-rotate 2s infinite linear;
+    }
+
+    @keyframes preloader-rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .loaded_hiding .preloader {
+      transition: 0.3s opacity;
+      opacity: 0;
+    }
+
+    .loaded .preloader {
+      display: none;
+    }
+  </style>
+ <link rel="stylesheet" href="simple-adaptive-slider.min.css">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="simple-adaptive-slider.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        autoplay: true,
+        interval: 10000,
+      });
+    });
+  </script>
+  <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+.slider__control {
+    position: absolute;
+    top: 50%;
+    width: 31px;
+    height: 100%;
+    transform: translateY(-50%);
+    display: ;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    opacity: .2;
+    user-select: none;
+}
+    .slider {
+      max-width:100%;
+      height: 750px
+    }
+
+    /* дополнительные стили для этого примера */
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      position: relative;
+      counter-increment: slide;
+    }
+
+    .slider__item::after {
+      content: counter(slide);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 1px;
+      font-weight: bold;
+    }
+
+    
+  </style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js">
+  </script>
+
+
+<script type="text/javascript">
+  
+"use strict";
+
+var main = function() {
+  $('.toggle-btn').click(function() {
+    $('.toggle-btn').hide();
+    $('.inv').show(); //added
+    $('.menu').animate({
+      left: "17%"
+    }, 260);
+  });
+  //Added
+  $('.inv').click(function() {
+    $('.inv').hide();
+    $('.menu').animate({
+      left: "94.5%" //1696
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+
+
+  $('.closed').click(function() {
+    $('.inv').hide(); //added
+    $('.menu').animate({
+      left: "95%"
+    }, 40);
+    $('.toggle-btn').show();
+
+  });
+};
+
+$(document).ready(main);
+
+
+</script>
+
+
+   
+
+
+
+
+
+
+
+<div class="inv" id="sidebar"></div><!-- Added an invisible block -->
+<div class="menu" id="sidebar"> <span ></span>
+
+
+<div class='toggle-btn'   >
+<span class="rir"></span>
+<span class="rir"></span>
+<span class="rir" ></span>
+</div>
+
+
+   <ul>
+  <li><a href="index.html">
+  <img src="KNU.png" alt="menu" style="float:left ; width: :162px ; height:92px; "></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style="float:right ; width: :102px ; height:82px; padding-right: 10px "></a>
+</li>
+  <li><a href="Infrastructure.html">Infrastructure</a></li>
+  <li><a href="visit.html">Visit</a></li>
+  <li><a href="focus.html">In focus</a></li>
+  <li><a href=" covid.html">About Covid</a></li>
+  <li><a href="news.html">News</a></li>
+
+
+  <li></li>
+</ul>
+
+</div>
+<div class="toggle-btn" ; style= "display:contents"> <span ></span></div>
+
+
+
+
+   <script src="anim.js"></script>
+   <script>
+   window.counter = function() {
+      // this refers to the html element with the data-scroll-showCallback tag
+      var span = this.querySelector('span');
+      var current = parseInt(span.textContent);
+      
+      span.textContent = current + 1;
+   };
+
+   document.addEventListener('DOMContentLoaded', function(){
+     ScrollTrigger.init();
+   });
+   </script>
+
+
+
+
+
+
+
+
+<div class="preloader">
+<div class="loader" id="loader" >
+  <div>
+    <ul>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 80%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+      <li style="height:150%;width: 76%;      backface-visibility: unset;">
+        <svg viewBox="0 0 90 120" fill="currentColor">
+          <path d="M90,0 L90,120 L11,120 C4.92486775,120 0,115.075132 0,109 L0,11 C0,4.92486775 4.92486775,0 11,0 L90,0 Z M71.5,81 L18.5,81 C17.1192881,81 16,82.1192881 16,83.5 C16,84.8254834 17.0315359,85.9100387 18.3356243,85.9946823 L18.5,86 L71.5,86 C72.8807119,86 74,84.8807119 74,83.5 C74,82.1745166 72.9684641,81.0899613 71.6643757,81.0053177 L71.5,81 Z M71.5,57 L18.5,57 C17.1192881,57 16,58.1192881 16,59.5 C16,60.8254834 17.0315359,61.9100387 18.3356243,61.9946823 L18.5,62 L71.5,62 C72.8807119,62 74,60.8807119 74,59.5 C74,58.1192881 72.8807119,57 71.5,57 Z M71.5,33 L18.5,33 C17.1192881,33 16,34.1192881 16,35.5 C16,36.8254834 17.0315359,37.9100387 18.3356243,37.9946823 L18.5,38 L71.5,38 C72.8807119,38 74,36.8807119 74,35.5 C74,34.1192881 72.8807119,33 71.5,33 Z"></path>
+        </svg>
+      </li>
+    </ul>
+  </div><span>Loading</span>
+</div>
+</div>
+
+
+  
+
+
+
+
+
+
+<script>
+    window.onload = function () {
+      document.body.classList.add('loaded_hiding');
+      window.setTimeout(function () {
+        document.body.classList.add('loaded');
+        document.body.classList.remove('loaded_hiding');
+      }, 500);
+    }
+  </script>
+
+
+
+
+  <style>
+   
+  A {
+    text-decoration: none; /* Убирает подчеркивание для ссылок */
+   } 
+   A:hover { 
+    text-decoration: underline; /* Добавляем подчеркивание при наведении курсора на ссылку */
+    color: red; /* Ссылка красного цвета */
+   } </style>
+</head>
+<body style="background-color:#00BFFF;font-family: Arial, Helvetica, sans-serif;" class="container" >
+  <!----------------------------->
+
+
+
+
+
+
+
+
+<!----
+<div id="sidebar">
+<div class="toggle-btn" onclick="openMenu()">
+<span></span>
+<span></span>
+<span></span>
+</div>
+
+<ul>
+  <li><a href="index.html">
+  <img src="KNU.png" alt="menu" style="float:left ; width: :162px ; height:92px; "></a>
+  <a href="border.html"><img src="wave.png" alt="wave" style="float:right ; width: :102px ; height:82px; padding-right: 10px "></a>
+</li>
+  <li><a href="Infrastructure.html">Infrastructure</a></li>
+  <li><a href="visit.html">Visit</a></li>
+  <li><a href="focus.html">In focus</a></li>
+  <li><a href=" covid.html">About Covid</a></li>
+  <li><a href="news.html">News</a></li>
+
+
+  <li></li>
+</ul>
+
+
+</div>
+<script type="text/javascript">
+  function openMenu(){
+
+document .getElementById("sidebar").classList.toggle("active");
+  
+  } 
+
+</script>
+
+----->
+
+
+
+
+
+
+
+
+
+
+
+
+  <!----------------------------->
+  <nav style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfO7tWhPK2EivliJemzmv8HorKtDodJdPwhQ&usqp=CAU);background-repeat:no-repeat;background-attachment: fixed;background-size: cover">
+  
+
+
+
+
+
+  <q style =" " class="cit"> For a citizen, political freedom is peace of mind based on the conviction of his own safety 
+
+
+
+
+
+  </q>
+  <br>
+  <br>
+  <br>
+<div class="block">
+  <h5 style="" class="char" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once"> <i><blockquote> Charles Montesquieu</blockquote></i></h5>
+  </div>
+  <br><br>
+  
+<!-----------------------------
+
+  <label for="fname">First name:</label><br>
+  <input type="text"id="fname" value = "Enter your name.. "/><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" value = "Enter your surname.. "/> 
+  <br/>
+  <br/>
+  <nav><strong>KB-11/1 ; KB-11/2</strong></nav>
+  <input name="df" type="radio" />
+  <input name="df" type="radio" />
+  <nav><strong>Enter your age</strong></nav>
+  <input type="datetime-local">
+  <br><br><br>
+  <input type="submit" value="Submit">
+  <br><br>
+
+----------------------------->
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<div class="content" style="
+ ">
+  <div class="content__container">
+    <p class="content__container__text">
+     This is private site only for_____________members !
+    </p>
+    
+    <ul class="content__container__list">
+      <li class="content__container__list__item"> KB-21 </li>
+      <li class="content__container__list__item"> KB-22 </li>
+      <li class="content__container__list__item">deprived </li>
+      <li class="content__container__list__item">special </li>
+    </ul>
+  </div>
+</div>
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+  <div class="typewriter" style="">
+  <h1>Follow your passion, or discover new ones. Taras Shevchenko National University of Kiev   </h1>
+      <h1 >offers unparalleled student experiences across a broad spectrum of academic environments.</h1>
+    <h1>Search or browse for a specific program to learn more about admissions requirements, </h1>
+    <h1>scholarships, and financial aid opportunities.</h1>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!----
+  <svg  viewBox="1 -10 600 500" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%">
+ <path id="path">
+    <animate attributeName="d" from="m0,110 h0" to="m0,110 h1500" dur="2.8s" begin="1s" repeatCount="indefinite"/>
+  </path>
+  <text font-size="25" font-family="Montserrat" fill='hsla(36, 95%, 85%, 1)'  >
+    <textPath xlink:href="#path" style="padding-right: 100px">Follow your passion, or discover new ones. Taras Shevchenko National University of Kiev offers unparalleled student experiences across a broad spectrum of academic environments. Search or browse for a specific program to learn more about admissions requirements, scholarships, and financial aid opportunities.
+    </textPath>
+  </text>
+</svg>
+
+
+---->
+
+
+
+
+
+
+  
+  </nav>  
+
+
+
+
+<hr><hr>
+
+<!--------------------------src="https://www.youtube.com/embed/mn_6gbD5dUY--  <iframe width=100% height="910"  controls poster="worldd.jpg"  src="https://www.youtube.com/embed/OPOcJjPrqGg"  title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen   ></iframe>---->
+  <div class="slider">
+    <div class="slider__wrapper">
+      <div class="slider__items">
+        <div class="slider__item">
+          <img class="img-fluid1" src="worldd.jpg" width="100%" height= "52%" alt="..."  loading="lazy" style="">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid2" src="viewss.jpg" alt="..." width="100%" height= "72%" loading="lazy" style="">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid1" src="new4.png" alt="..." width="100%" height= "72%" loading="lazy" style="">
+        </div>
+        <div class="slider__item">
+          <img class="img-fluid1" src="new3.png" alt="..." width="100%" height= "72%" loading="lazy" style="">
+        </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button" data-slide="prev"></a>
+    <a class="slider__control slider__control_next" href="#" role="button" data-slide="next"></a>
+  </div>
+  <hr><hr>
+  
+  <header>
+<!----------------------------->
+<section style ="background-image:url(https://www.harvard.edu/wp-content/uploads/2021/01/052616_COM_SM_0243-1152x769.jpeg);background-repeat:no-repeat;background-attachment: fixed;background-size: cover;padding-bottom: 100px">
+    <div class="block">
+    <h3 style="  " class="glob" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">General information about KB-11</h3>
+
+<p style ="color : white ; font-smoothing:antialiased;tap-highlight-color:transparent ; border: 10px solid black ; margin:30px ; padding:30px ;text-shadow:1px 1px 2px black, 0 0 1em black;box-shadow:1px 1px 2px black, 0 0 1em black;margin-top: 190px " class="part" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">KB members are the smartest people on this planet, they learn what the Pentagon employees will envy, their main task is the safety of peaceful citizens and ensuring life in peace and prosperity</p>
+
+</section>    
+<!----------------------------->
+  </header>
+<main style="background-image:url(https://www.harvard.edu/wp-content/uploads/2021/01/102220_Rittase_Widener_Library-1-2000x1478.jpg);padding-bottom: 100px">
+  <h2 style="" class="glob"data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Schedule of classes KB-11 </h2>
+<aside style ="color : black ; background-color : orange ; border: 2px solid black ; margin:20px ; padding:20px" class="part" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">practise<sup>orange</sup></aside>
+<aside style = "color : black ; background-color :lightpink ; border: 2px solid black ; margin:20px ; padding:20px" class="part" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">lecture<sup>lightpink</sup></aside>   
+
+  <ol>
+    <li color = "lightpink"  style="background-color:black "><p style="color: white;margin-left: 20px;margin-top: 20px" class="part">15.10-16.30</p><a  href="https://us04web.zoom.us/j/3265546800?pwd=cUxYb1lyaGovb3FINVVwbnBRUnJRZz09"class="part" style="color: pink" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Cигнали та процеси в системах технічного захисту інформації (Л)         
+       </a> </li>
+    <li color="lightpink"  style="background-color:black "> <p style="color: white;margin-left: 20px;margin-top: 20px" class="part">16.40-18.00</p><a href="https://teams.microsoft.com/l/meetup-join/19%3afecb05cefe7a463cabc023ed631ddf4a%40thread.tacv2/1613988580085?context=%7b%22Tid%22%3a%2211bdc4c0-f87d-4025-84ee-777d1d7ffc4d%22%2c%22Oid%22%3a%226c566d8d-32dc-45c3-908a-20506f1d82a2%22%7d"class="part" style="color: pink" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">"Нормативно-правове забезпечення інформаційної безпеки (Л)
+доц. Браіловський М. М.
+"       
+       
+        
+        </a> </li>
+
+
+
+
+
+
+  </ol>
+</div>
+</main>
+<div class="row">
+    <div class="col-md-3 col-sm-3 col-xs-6"> <a target="_blank" href="https://docs.google.com/spreadsheets/d/1sGAKabnbb8wKQer9O7qwIV_QXo_RB0m5PB-4vnyYB80/edit#gid=894258882" class="btn btn-sm animated-button thar-one part" >More</a> </div>
+<hr>
+
+<footer >
+  <!----------------------------->
+    
+</footer> 
+<hr>
+</style>
+
+
+
+
+
+<!----------------------------->
+
+
+
+<header style ="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoU_2j_TdFwUYCTBUMem4E_Nb0RlzCyJjKEA&usqp=CAU);background-repeat:no-repeat;background-attachment: fixed;background-size: cover;padding-bottom: 50px;">
+  <div class="block">
+  <h2 style="" class="glob" data-scroll="toggle(.scaleDownIn, .scaleDownOut) addHeight">Our partners</h2>
+
+
+<section style=" content: "";
+  display: table;
+  clear: both;">
+  <nav style="" class="nav">
+    <ul>
+      <li style="background-color:white" class="part"><a href="https://www.instagram.com/cozy.sttore/?igshid=1emrrej8eo958">Cozy.sttore</a></li> 
+      <li style="background-color:white" class="part"> <a href=></a>«Книгарня Є»</li>
+      <li style="background-color:white" class="part"><a href=></a>«EnjoyArtStudio»</li>
+    </ul>
+  </nav>
+   <nav,article style="width: 100%;
+    height: auto;">
+   </nav,article>
+
+    
+  <aside style="" class="aside">
+    
+    <h1 style = "color:white;content: "";
+  display: table;
+  clear: both;" class="our" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Cozy.sttore</h1>
+    <p style="color:#8FBC8F" class="part" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Cozzy.store - shop where you can buy  ▫️aroma-candles
+▫️bath slat
+▫️gift sets
+▫️own production</p>
+   
+  </aside>
+</section>
+
+<section style=" content: "";
+  display: table;
+  clear: both;">
+  <nav style=""class="nav">
+    <ul>
+      <li style="background-color:white" class="part"><a href="https://www.instagram.com/cozy.sttore/?igshid=1emrrej8eo958"></a>Cozy.sttore</li> 
+      <li style="background-color:white" class="part"> <a href="https://book-ye.com.ua">«Книгарня Є»</a></li>
+      <li style="background-color:white" class="part"><a href="http://enjoyart.tilda.ws"></a>«EnjoyArtStudio»</li>
+    </ul>
+  </nav>
+
+  <aside style="" class="aside">
+    
+    <h1 style = "color:white;content: "";
+  display: table;
+  clear: both;" class="our" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Книгарня Є</h1>
+    <p style="color:#8FBC8F" class="part" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Online bookstore КНИГАРНЯ "Є" – ✓Best range ✓Low price ✓News ✓Bestsellers ✓Buy books online</p>
+   
+  </aside>
+</section>
+
+
+<section style=" content: "";
+  display: table;
+  clear: both;">
+  <nav style="" class="nav">
+    <ul>
+      <li style="background-color:white" class="part"><a href="https://www.instagram.com/cozy.sttore/?igshid=1emrrej8eo958"></a>Cozy.sttore</li> 
+      <li style="background-color:white" class="part"> <a href="https://book-ye.com.ua"></a>«Книгарня Є»</li>
+      <li style="background-color:white" class="part"><a href="http://enjoyart.tilda.ws">«EnjoyArtStudio»</a></li>
+    </ul>
+  </nav>
+
+  <aside style="" class="aside">
+    
+    <h1 style = "color:white;content: "";
+  display: table;
+  clear: both;" class="our" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">EnjoyArtStudio</h1>
+    <p style="color:#8FBC8F" class="part" data-scroll="toggle(.fromRightIn, .fromRightOut) addHeight once">Our studio-workshop provide You spacefor realize Your creative ideas and desires unde the litte supervision</p>
+   
+  </aside>
+</section>
+</div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<hr>
+<div class="block">
+<h2 style=" " class="h2" ><span class="select" >Click on the link below for detailed information</span></h2>
+</div>
+
+
+
+
+<iframe src="demo_ifreme.html" name = "iframe" frameborder ="0"  width ="100%" height="800px" title="iframe example"  >Sorry not sorry</iframe>
+<p style="text-align:center;"><a href="http://fit.univ.kiev.ua" target="iframe"><div class="box-3">
+  <div class="btn btn-three" style="margin-left:1px; padding-top:30px ;padding-bottom:30px;font-size: 24px ;padding-left: 47%;padding-right: 30%  ">
+    <span style="text-align: center" class="part">click here</span>
+  </div>
+</div></iframe>
+
+<!----------------------------->
+
+<section style="background-color: black; padding: 10px;padding-top: 60px">
+  
+  
+  <a href="https://www.instagram.com/elmirabdullaev/"><img src="https://image.flaticon.com/icons/png/512/174/174855.png" alt="insta" style="float:center;width:42px;height:42px; "></a>
+
+  <a href="https://t.me/spu_knu"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Telegram_logo.svg/600px-Telegram_logo.svg.png" alt="insta" style="float:center;width:42px;height:42px; "></a>
+
+<span style="text-align: right;color:white;font-family:Indie Flower ; " class="part"><i> *site was designed by Elmir Abdullaev<i></span>
+</section>
+
+
+
+
+
+
+
+
+
+<script data-cfasync="false">
+(function(W,i,s,e,P,o,p){W['WisePopsObject']=P;W[P]=W[P]||function(){(W[P].q=W[P].q||[]).push(arguments)},W[P].l=1*new Date();o=i.createElement(s),p=i.getElementsByTagName(s)[0];o.defer=1;o.src=e;p.parentNode.insertBefore(o,p)})(window,document,'script','//loader.wisepops.com/get-loader.js?v=1&site=pL42394Cxb','wisepops');
+</script>
+</body>
+</html>
+
