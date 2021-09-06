@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Share Button</title>
+
+ <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=612383f982028300120e6fc1&product=inline-share-buttons" async="async"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="icon" href="kny.png">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <link rel="stylesheet" href="stylish.css">
+  
+      <link rel="stylesheet" href="border.css">
+      <link rel="stylesheet" href="im.css">
+      <link rel="stylesheet" href="poster.css">
+            
+      <link rel="stylesheet" href="end.css">
+  
+        <link rel="stylesheet" type="text/css" href="med.css">
+    
+ <link rel="stylesheet" href="preload.css">
+
+</head>
+<body>
+
+    <div class="container">
+        <button class="share-btn">
+            <i class="fas fa-share-alt"></i>
+        </button>
+          <div class="share-options">
+            <p class="">share</p>
+            <div class="social-media">
+            <a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com"><button class="social-media-btn" style="background: #FFA654;;"><i class="far fa-folder-open"></i></button></a>
+            <a href="https://api.whatsapp.com/send?text=AddThis%20Share%20Buttons%20-%20AddThis%20https%3A%2F%2Fwww.addthis.com%2Fget%2Fshare%2F%23.YSObKt6r7fE.whatsapp"> <button class="social-media-btn" style="    background: #25D366;"><i class="fab fa-whatsapp"></i></button></a> 
+            <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank"><button class="social-media-btn"  style="background: #1DA1F2;"><i class="fab fa-twitter"></i></button></a>  
+            <a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" >  <button class="social-media-btn"  style="background: #0A66C2;"> <i class="fab fa-facebook-f"></i></button></a>
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https://simplesharebuttons.com" target="_blank"><button class="social-media-btn" style="background:#1877F2;"><i class="fab fa-linkedin-in"></i></button></a>
+            <a href="https://t.me/share/url?url=https%3A%2F%2Fwww.sharethis.com%2F&text=ShareThis%20Onboarding%3A%20Customize%20Share%20Buttons%20%26%20Other%20Tools%20-%20ShareThis&to="><button class="social-media-btn"  style="background: #1DA1DC;"><i class="fab fa-telegram"></i></button></a>
+            
+        </div>
+            <div class="link-container">
+                <input type="text" class="link" value="Hello World" id="myInput">
+
+
+
+<div class="tooltip">
+<button onclick="myFunction()" onmouseout="outFunc()" class="copy-btn" style="    padding-bottom: 100px;font-size:17.1px">
+  <span class="tooltiptext" id="myTooltip"></span>Copy text</button>
+</div>
+            </div>
+        </div>
+    </div>
+
+                
+                
+<script>
+
+function myFunction() {
+  var copyText = document.getElementById("myInput");
+  copyText.select();
+  copyText.setSelectionRange(0, 99999);
+  navigator.clipboard.writeText(copyText.value);
+  
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copied: " + copyText.value;
+}
+
+function outFunc() {
+  var tooltip = document.getElementById("myTooltip");
+  tooltip.innerHTML = "Copy to clipboard";
+}
+
+</script>
+
+
+
+<script src="app.js"></script>
+    
+</body>
+</html>

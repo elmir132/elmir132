@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" href="https://raw.githubusercontent.com/ovatlh/ovatlh.github.io/main/portafolio/t-favicon.ico">
+  <title>er</title>
+  <meta name="title" content="@ovatlh | tCarousel-js">
+  <meta name="description" content="tCarousel-js, simple carousel with js.">
+  <meta name="subject" content="tCarousel-js, simple carousel with js.">
+  <meta name="author" content="@ovatlh">
+  <meta name="keywords"
+    content="@ovatlh, tcarousel-js, tcarousel, carousel, js, dynamic carousel, simple carousel, html, css, javascript, js vanilla">
+  <meta name="og:title" content="@ovatlh | tCarousel-js">
+  <meta name="og:site_name" content="@ovatlh | tCarousel-js">
+  <meta name="og:image" content="https://raw.githubusercontent.com/ovatlh/tCarousel-js/main/assets/tcarousel-js.PNG">
+  <meta name="og:url" content="https://ovatlh.github.io/apps/tCarousel/">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <link rel="stylesheet" href="slider.css">
+
+  <!-- tCarousel assets -->
+  <link rel="stylesheet" href="sliders2.css">
+  <script src="slider.js" defer></script>
+  <!-- tCarousel assets -->
+
+
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>JavaScript SimpleAdaptiveSlider - Слайдер для сайта на чистом JavaScript [Example 04]</title>
+  
+  <!-- Подключаем CSS слайдера -->
+  <link rel="stylesheet" href="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.css">
+  <!-- Подключаем JS слайдера -->
+  <script defer src="/examples/libs/simple-adaptive-slider/simple-adaptive-slider.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      // инициализация слайдера
+      var slider = new SimpleAdaptiveSlider('.slider', {
+        autoplay: true,
+        interval: 10000,
+      });
+    });
+  </script>
+  <style>
+    /* стили для элемента body */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    }
+.slider__control {
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 405px;
+    transform: translateY(-50%);
+    display: ;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    background: rgba(0,0,0,.3);
+    opacity: .2;
+    user-select: none;
+}
+    .slider {
+      max-width: 800px;
+    }
+
+    /* дополнительные стили для этого примера */
+    .slider__items {
+      counter-reset: slide;
+    }
+
+    .slider__item {
+      position: relative;
+      counter-increment: slide;
+    }
+
+    .slider__item::after {
+      content: counter(slide);
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      color: #fff;
+      font-style: italic;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .img-fluid {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+    }
+  </style>
+</head>
+
+
+
+
+
+
+
+
+<body>
+
+
+
+<img src="third.jpg" alt="dfs">
+
+
+
+  <div class="page">
+    <div class="t-carousel t-h" id="tC-00" data-tc-time-sec="3" data-tc-direction="right">
+      <div class="t-items">
+        <div class="t-item">
+          <p class="content p-1" ><img src="worldd.jpg" alt="dfs" style="width:1000px;height: 500px"></p>
+        </div>
+
+        <div class="t-item">
+          <p class="content p-2"><img src="vse.jpg" alt="dfs" style="width:1000px;height: 500px"></p>
+        </div>
+
+        <div class="t-item">
+          <p class="content p-3"><img src="third.jpg" alt="dfs" style="width:1000px;height: 500px"></p>
+        </div>
+
+        <div class="t-item">
+          <p class="content p-4"><img src="forth.jpg" alt="dfs" style="width:1000px;height: 500px">
+</p>
+        </div>
+
+        <div class="t-item">
+          <p class="content p-5"></p>
+        </div>
+      </div>
+
+      <button class="t-btn t-left">
+        <i class="fas fa-caret-left"></i>
+      </button>
+      <button class="t-btn t-right">
+        <i class="fas fa-caret-right"></i>
+      </button>
+      <button class="t-btn t-up">
+        <i class="fas fa-caret-up"></i>
+      </button>
+      <button class="t-btn t-down">
+        <i class="fas fa-caret-down"></i>
+      </button>
+    </div>
+
+    <ol class="slider__indicators"><li class="slider__indicator slider__indicator_active" data-slide-to="0"></li><li class="slider__indicator" data-slide-to="1"></li><li class="slider__indicator" data-slide-to="2"></li><li class="slider__indicator" data-slide-to="3"></li></ol>
+  </div>
+</body>
+
+</html>
