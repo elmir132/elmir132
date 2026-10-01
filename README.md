@@ -11,7 +11,7 @@ AI/backend engineer, M.Eng. CS candidate at Cornell Tech, building toward foundi
 **🔒 TinyML BLE Vulnerability Detection** — [`ble_vulnerability_tinyml`](https://github.com/elmir132/ble_vulnerability_tinyml)
 Neural classifier for real-time Bluetooth Low Energy threat detection on embedded hardware.
 `99.68%` test accuracy · `260×` model compression to `4.62 KB` · `0.9 ms` inference on ESP32-S3
-Published: *CH&CMiGIN-2026*, Kraków (CEUR-WS, Scopus-indexed)
+Published: *CH&CMiGIN-2026*, Kraków · [CEUR-WS Vol-4278](https://ceur-ws.org/Vol-4278/short03.pdf) (Scopus-indexed)
 
 **🤖 Hermes — Production AI Assistant** — [`hermes`](https://github.com/elmir132/hermes)
 Conversational assistant serving live users, with persistent long-term memory and failure resilience.
