@@ -1,36 +1,71 @@
-### Hi, I'm Elmir 👋
+<img src="assets/banner.svg" width="100%" alt="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to an assistant serving live users.">
 
-AI/backend engineer, M.Eng. CS candidate at Cornell Tech, building toward founding an AI startup. Background in cybersecurity (B.Sc. honors, M.Sc. in progress), now focused on applied ML systems that ship and hold up under real traffic.
+### Hi, I'm Elmir
 
-📍 New York, NY · 🎓 Cornell Tech, M.Eng. CS (May 2027) · 🔗 [linkedin.com/in/elmirabd](https://linkedin.com/in/elmirabd) · 🌐 [elmirabd.me](https://elmirabd.me)
+AI/backend engineer, M.Eng. CS candidate at **Cornell Tech**, building toward founding an AI startup. Background in cybersecurity (B.Sc. honors, M.Sc. in progress), now focused on applied ML systems that ship and hold up under real traffic.
 
----
+📍 New York, NY · 🎓 Cornell Tech, M.Eng. CS (May 2027)
 
-### 🛠️ Shipped work
+## Shipped work
 
-**🔒 TinyML BLE Vulnerability Detection** — [`ble_vulnerability_tinyml`](https://github.com/elmir132/ble_vulnerability_tinyml)
-Neural classifier for real-time Bluetooth Low Energy threat detection on embedded hardware.
-`99.68%` test accuracy · `260×` model compression to `4.62 KB` · `0.9 ms` inference on ESP32-S3
-Published: *CH&CMiGIN-2026*, Kraków · [CEUR-WS Vol-4278](https://ceur-ws.org/Vol-4278/short03.pdf) (Scopus-indexed)
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/elmir132/ble_vulnerability_tinyml">TinyML BLE vulnerability detection</a></h3>
+      Neural classifier for real-time Bluetooth Low Energy threat detection on embedded hardware.
+      <br>Published at <i>CH&amp;CMiGIN-2026</i>, Kraków (<a href="https://ceur-ws.org/Vol-4278/short03.pdf">CEUR-WS Vol-4278</a>, Scopus-indexed).
+      <br><br>
+      <img src="assets/stat-ble.svg" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model, 0.9 ms inference">
+      <br><br>
+      <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/elmir132/hermes">Hermes, production AI assistant</a></h3>
+      Conversational assistant serving live users, with persistent long-term memory and failure resilience. Routes across several models with automatic fallback, RAG over a SQLite vector store, supervised by systemd on a Linux cloud instance.
+      <br><br>
+      <img src="assets/stat-hermes.svg" alt="6 model tiers with automatic fallback">
+      <br><br>
+      <code>Python</code> <code>SQLite</code> <code>systemd</code>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/elmir132/mongodb-hackathon">Chronicle, self-healing project memory</a></h3>
+      Built the resolution engine for a 4-person team at a MongoDB hackathon: conflict resolution by source authority and recency, and precedent-based policy learning from human corrections. Verified end to end on real MongoDB Atlas.
+      <br><br>
+      <img src="assets/stat-chronicle.svg" alt="MongoDB Atlas Vector Search, 2 bugs found by live testing">
+      <br><br>
+      <code>Python</code> <code>MongoDB Atlas</code>
+    </td>
+    <td width="50%" valign="top">
+      <h3><a href="https://github.com/elmir132/security-overflow">Security Overflow, OWASP scanner</a></h3>
+      Flask scanner that orchestrates Wapiti, SQLMap and Nikto behind one interface, with LLM-generated remediation guidance.
+      <br><br>
+      <img src="assets/stat-scanner.svg" alt="87 percent detection accuracy across more than 150 test applications">
+      <br><br>
+      <code>Flask</code> <code>Wapiti</code> <code>SQLMap</code> <code>Nikto</code>
+    </td>
+  </tr>
+</table>
 
-**🤖 Hermes — Production AI Assistant** — [`hermes`](https://github.com/elmir132/hermes)
-Conversational assistant serving live users, with persistent long-term memory and failure resilience.
-Multi-model routing with automatic fallback across `6` model tiers · RAG over a SQLite vector store · systemd-supervised on a Linux cloud instance
+**More**
 
-**🧩 Chronicle — Self-Healing Project Memory** — [`mongodb-hackathon`](https://github.com/elmir132/mongodb-hackathon)
-Built the resolution engine for a 4-person team at a MongoDB hackathon: conflict resolution by source authority/recency, and precedent-based policy learning from human corrections.
-Verified end-to-end on real MongoDB Atlas Vector Search · found and fixed 2 case-sensitivity bugs via live HTTP testing that unit tests missed
+- [Rental Law Navigator](https://github.com/elmir132/rental-law-navigator): address-level housing-law lookup where a verifier rejects any quote not literally in the source. Built solo overnight for the Hack-Nation RealPage challenge.
+- [Utility Debt Shield](https://github.com/elmir132/utility-debt-shield): prototype API that flags utility activation friction before a lease is signed (mock data only).
+- [ClipTidy](https://github.com/elmir132/cliptidy): macOS menu-bar app that cleans clipboard text with one shortcut.
+- [Multi-model research orchestrator](https://github.com/elmir132/multi-model-research-orchestrator): CLI that compares several AI providers on one question and shows where they disagree.
+- [tuichat](https://github.com/elmir132/terminal-llm-chat): full-screen terminal chat client for Ollama and OpenAI-compatible models.
+- [Crypto trend dashboard](https://github.com/elmir132/crypto-trend-dashboard) and [NFT call builder](https://github.com/elmir132/nft-call-builder): small Flask and Node tools on public market data.
 
-**🛡️ Security Overflow — OWASP Vulnerability Scanner** — [`security-overflow`](https://github.com/elmir132/security-overflow)
-Flask scanner orchestrating Wapiti, SQLMap, and Nikto behind one interface, with LLM-generated remediation guidance.
-`87%` detection accuracy across `150+` test applications
+## Stack
 
----
+<img src="assets/stack.svg" width="100%" alt="Languages: Python, TypeScript and JavaScript, C and C++, SQL. ML: TensorFlow, TensorFlow Lite Micro, PyTorch. Backend and data: FastAPI, Flask, MongoDB Atlas, PostgreSQL, SQLite, vector search. Infra: Docker, systemd, DigitalOcean. Hardware: ESP32-S3, BLE, MQTT.">
 
-### 💻 Stack
+## Contact
 
-`Python` `TypeScript/JavaScript` `C/C++` `SQL` — `TensorFlow` `TensorFlow Lite Micro` `PyTorch` — `FastAPI` `Flask` `MongoDB Atlas` `PostgreSQL` `SQLite` `vector search` — `Docker` `systemd` `DigitalOcean` — `ESP32-S3` `BLE` `MQTT`
+<a href="https://linkedin.com/in/elmirabd"><img src="assets/link-linkedin.svg" height="56" alt="LinkedIn: in/elmirabd"></a>
+<a href="https://elmirabd.me"><img src="assets/link-site.svg" height="56" alt="Website: elmirabd.me"></a>
+<a href="mailto:ea488@cornell.edu"><img src="assets/link-email.svg" height="56" alt="Email: ea488@cornell.edu"></a>
+<a href="https://ceur-ws.org/Vol-4278/short03.pdf"><img src="assets/link-paper.svg" height="56" alt="Paper: CEUR-WS Vol-4278"></a>
 
----
-
-📫 Reach me at ea488@cornell.edu or on [LinkedIn](https://linkedin.com/in/elmirabd)
+<sub>Banner and badges are generated by <a href="scripts/build.py"><code>scripts/build.py</code></a>. Every number comes from the linked project READMEs.</sub>
