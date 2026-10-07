@@ -15,9 +15,9 @@ AI/backend engineer, M.Eng. CS candidate at **Cornell Tech**, building toward fo
       Neural classifier for real-time Bluetooth Low Energy threat detection on embedded hardware.
       <br>Published at <i>CH&amp;CMiGIN-2026</i>, Kraków (<a href="https://ceur-ws.org/Vol-4278/short03.pdf">CEUR-WS Vol-4278</a>, Scopus-indexed).
       <br><br>
-      <img src="assets/stat-ble.svg" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model, 0.9 ms inference">
+      <img src="assets/stat-ble.svg" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model">
       <br><br>
-      <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code>
+      <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code> · 0.9 ms inference
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/elmir132/hermes">Hermes, production AI assistant</a></h3>

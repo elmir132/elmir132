@@ -121,8 +121,8 @@ if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     banner()
     stack()
-    tiles("stat-ble.svg", "99.68 percent accuracy, 260 times smaller, 4.62 KB model, 0.9 ms inference",
-          [("99.68%", "test accuracy"), ("260×", "smaller model"), ("4.62 KB", "on ESP32-S3"), ("0.9 ms", "inference")])
+    tiles("stat-ble.svg", "99.68 percent accuracy, 260 times smaller, 4.62 KB model",
+          [("99.68%", "test accuracy"), ("260×", "smaller model"), ("4.62 KB", "on ESP32-S3")])
     tiles("stat-hermes.svg", "6 model tiers with automatic fallback",
           [("6", "model tiers"), ("auto", "fallback")])
     tiles("stat-chronicle.svg", "MongoDB Atlas Vector Search, 2 bugs found by live testing",
