@@ -70,7 +70,7 @@ def banner():
 
 def tiles(name, label, items):
     """A row of stat tiles. items = [(value, caption)]."""
-    pad, gap, h = 16, 10, 78
+    pad, gap, h = 12, 8, 78
     widths = [max(len(v) * 15.5, len(c) * 7.6 * 0.95) + 2 * pad for v, c in items]
     total = int(sum(widths) + gap * (len(items) - 1))
     x, parts = 0.0, []
