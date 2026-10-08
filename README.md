@@ -50,7 +50,7 @@ AI/backend engineer, M.Eng. CS candidate at **Cornell Tech**, building toward fo
 
 **More**
 
-- [StreetScript](https://github.com/elmir132/nyc-cut-up-machine): team project from the Elastic x Mistral NYC Hack Night (my fork of Paradox560/nyc-cut-up-machine). It writes poems and letters using only words cut from 1940s NYC storefront photos, every word traced back to its photo. I added Rearrange (same words, new form), a hybrid vocabulary search and Mistral moderation.
+- [StreetScript](https://github.com/elmir132/streetscript): team project from the Elastic x Mistral NYC Hack Night (team repo: Paradox560/nyc-cut-up-machine). It writes poems and letters using only words cut from 1940s NYC storefront photos, every word traced back to its photo. I added Rearrange (same words, new form), a hybrid vocabulary search and Mistral moderation.
 - [Rental Law Navigator](https://github.com/elmir132/rental-law-navigator): address-level housing-law lookup where a verifier rejects any quote not literally in the source. Built solo overnight for the Hack-Nation RealPage challenge.
 - [Utility Debt Shield](https://github.com/elmir132/utility-debt-shield): prototype API that flags utility activation friction before a lease is signed (mock data only).
 - [ClipTidy](https://github.com/elmir132/cliptidy): macOS menu-bar app that cleans clipboard text with one shortcut.
