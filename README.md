@@ -1,4 +1,4 @@
-<img src="assets/banner.svg" width="100%" alt="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to an assistant serving live users.">
+<a href="https://elmirabd.me"><img src="assets/banner.svg" width="100%" alt="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to an assistant serving live users. Click to open elmirabd.me."></a>
 
 ### Hi, I'm Elmir
 
