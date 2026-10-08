@@ -47,8 +47,18 @@ def banner():
   <rect width="1280" height="320" rx="18" fill="url(#fade)"/>
   <rect x=".5" y=".5" width="1279" height="319" rx="17.5" fill="none" stroke="{LINE}"/>
   <line x1="690" y1="168" x2="1230" y2="168" stroke="#21262d" stroke-width="1" stroke-dasharray="4 6"/>
+  <style>
+    .run {{ fill:none; stroke:#eafffb; stroke-width:3; stroke-linejoin:round; stroke-linecap:round; stroke-dasharray:55 945; stroke-dashoffset:0; animation:run 4.2s linear infinite; }}
+    .run.glow {{ stroke:{TEAL}; stroke-width:9; opacity:.65; }}
+    .run.echo {{ opacity:.45; animation-delay:-2.1s; }}
+    @keyframes run {{ to {{ stroke-dashoffset:-1000; }} }}
+    @media (prefers-reduced-motion: reduce) {{ .run {{ animation:none; opacity:0; }} }}
+  </style>
   <path d="{path}" fill="none" stroke="{TEAL}" stroke-width="5" opacity=".55" filter="url(#glow)"/>
   <path d="{path}" fill="none" stroke="{TEAL}" stroke-width="2.4" stroke-linejoin="round"/>
+  <path class="run glow" pathLength="1000" d="{path}" filter="url(#glow)"/>
+  <path class="run" pathLength="1000" d="{path}"/>
+  <path class="run echo" pathLength="1000" d="{path}"/>
   <g font-family="{MONO}" font-size="13" fill="{DIM}">
     <text x="690" y="82">BLE advertising packets</text>
     <text x="690" y="270">ESP32-S3 · 4.62 KB model · inference 0.9 ms</text>
