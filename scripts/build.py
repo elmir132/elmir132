@@ -179,6 +179,8 @@ if __name__ == "__main__":
           [("6", "model tiers"), ("auto", "fallback"), ("20", "tests")])
     tiles("stat-advocate.svg", "On 20 scripted lines: 0.90 precision and 1.00 recall",
           [("0.90", "precision"), ("1.00", "recall"), ("20", "scripted lines")])
+    tiles("stat-rental.svg", "59 source documents, 500 addresses, 9 cities",
+          [("59", "source documents"), ("500", "addresses"), ("9", "cities")])
     tiles("stat-streetscript.svg", "1st place, team of 4, 165 tests",
           [("1st", "place"), ("4", "person team"), ("165", "tests")])
     tiles("stat-chronicle.svg", "MongoDB Atlas Vector Search, 2 bugs found by live testing",
