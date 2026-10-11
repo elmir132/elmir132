@@ -52,7 +52,11 @@ def banner():
     .run.glow {{ stroke:{TEAL}; stroke-width:9; opacity:.65; }}
     .run.echo {{ opacity:.45; animation-delay:-2.1s; }}
     @keyframes run {{ to {{ stroke-dashoffset:-1000; }} }}
-    @media (prefers-reduced-motion: reduce) {{ .run {{ animation:none; opacity:0; }} }}
+    .cta {{ animation:pulse 2.8s ease-in-out infinite; }}
+    .arrow {{ animation:nudge 2.8s ease-in-out infinite; }}
+    @keyframes pulse {{ 0%,100% {{ stroke-opacity:.45; }} 50% {{ stroke-opacity:1; }} }}
+    @keyframes nudge {{ 0%,100% {{ transform:translate(0,0); }} 50% {{ transform:translate(3px,-3px); }} }}
+    @media (prefers-reduced-motion: reduce) {{ .run {{ animation:none; opacity:0; }} .cta, .arrow {{ animation:none; }} }}
   </style>
   <path d="{path}" fill="none" stroke="{TEAL}" stroke-width="5" opacity=".55" filter="url(#glow)"/>
   <path d="{path}" fill="none" stroke="{TEAL}" stroke-width="2.4" stroke-linejoin="round"/>
@@ -71,8 +75,12 @@ def banner():
   <text x="56" y="132" font-family="{SANS}" font-size="56" font-weight="700" fill="{TEXT}" letter-spacing="-1">Elmir Abdullaiev</text>
   <text x="58" y="178" font-family="{SANS}" font-size="23" fill="{MUTED}">AI / backend engineer · M.Eng. CS, Cornell Tech</text>
   <text x="58" y="228" font-family="{SANS}" font-size="17" fill="{DIM}">From a 4.62 KB model on a microcontroller</text>
-  <text x="58" y="252" font-family="{SANS}" font-size="17" fill="{DIM}">to an assistant serving live users.</text>
-  <rect x="58" y="274" width="64" height="4" rx="2" fill="{TEAL}"/>
+  <text x="58" y="252" font-family="{SANS}" font-size="17" fill="{DIM}">to RAG assistants and live voice agents.</text>
+  <g transform="translate(58 270)">
+    <rect class="cta" width="176" height="32" rx="16" fill="{PANEL}" stroke="{TEAL}" stroke-opacity=".7"/>
+    <text x="18" y="21" font-family="{MONO}" font-size="13.5" fill="{TEAL}">elmirabd.me</text>
+    <g class="arrow"><path d="M138 21 L150 9 M141 9 H150 V18" fill="none" stroke="{TEAL}" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+  </g>
 </svg>
 '''
     write("banner.svg", svg)
@@ -96,23 +104,25 @@ def tiles(name, label, items):
 def stack():
     rows = [
         ("Languages", ["Python", "TypeScript / JavaScript", "C / C++", "SQL"]),
-        ("ML", ["TensorFlow", "TensorFlow Lite Micro", "PyTorch"]),
+        ("ML and AI", ["TensorFlow", "TensorFlow Lite Micro", "PyTorch", "Gemini", "RAG"]),
         ("Backend and data", ["FastAPI", "Flask", "MongoDB Atlas", "PostgreSQL", "SQLite", "vector search"]),
         ("Infra", ["Docker", "systemd", "DigitalOcean"]),
         ("Hardware", ["ESP32-S3", "BLE", "MQTT"]),
     ]
-    fs, ph, gap, label_w, row_h, top = 13, 30, 10, 150, 46, 22
+    fs, ph, gap, label_w, row_h, top = 13, 30, 10, 172, 46, 22
     width, parts = 1000, []
     for i, (name, items) in enumerate(rows):
         y = top + i * row_h
-        parts.append(f'<text x="22" y="{y + 20}" font-family="{SANS}" font-size="14" font-weight="600" fill="{MUTED}">{esc(name)}</text>')
+        dot = TEAL if i % 2 == 0 else AMBER
+        parts.append(f'<rect x="22" y="{y + 9}" width="4" height="14" rx="2" fill="{dot}"/>'
+                     f'<text x="36" y="{y + 20}" font-family="{SANS}" font-size="14" font-weight="600" fill="{MUTED}">{esc(name)}</text>')
         x = label_w
         for it in items:
             w = len(it) * fs * MONO_W + 28
             parts.append(f'<g transform="translate({x:.0f} {y})"><rect width="{w:.0f}" height="{ph}" rx="15" fill="{PANEL}" stroke="{LINE}"/>'
                          f'<text x="14" y="20" font-family="{MONO}" font-size="{fs}" fill="{TEXT}">{esc(it)}</text></g>')
             x += w + gap
-    height = top + len(rows) * row_h
+    height = top + len(rows) * row_h + 4
     desc = "; ".join(f"{n}: {', '.join(i)}" for n, i in rows)
     write("stack.svg", f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-label="{esc(desc)}">'
           f'<rect width="{width}" height="{height}" rx="14" fill="{BG}" stroke="{LINE}"/>' + "".join(parts) + "</svg>\n")
@@ -133,13 +143,18 @@ if __name__ == "__main__":
     stack()
     tiles("stat-ble.svg", "99.68 percent accuracy, 260 times smaller, 4.62 KB model",
           [("99.68%", "test accuracy"), ("260×", "smaller model"), ("4.62 KB", "on ESP32-S3")])
-    tiles("stat-hermes.svg", "6 model tiers with automatic fallback",
-          [("6", "model tiers"), ("auto", "fallback")])
+    tiles("stat-hermes.svg", "6 model tiers with automatic fallback, 20 tests",
+          [("6", "model tiers"), ("auto", "fallback"), ("20", "tests")])
+    tiles("stat-advocate.svg", "On 20 scripted lines: 0.90 precision and 1.00 recall",
+          [("0.90", "precision"), ("1.00", "recall"), ("20", "scripted lines")])
+    tiles("stat-streetscript.svg", "1st place, team of 4, 165 tests",
+          [("1st", "place"), ("4", "person team"), ("165", "tests")])
     tiles("stat-chronicle.svg", "MongoDB Atlas Vector Search, 2 bugs found by live testing",
           [("Atlas", "vector search"), ("2", "bugs caught live")])
     tiles("stat-scanner.svg", "87 percent detection accuracy across more than 150 test applications",
           [("87%", "detection accuracy"), ("150+", "test apps")])
     link("link-linkedin.svg", "LinkedIn", "in/elmirabd", TEAL)
+    link("link-github.svg", "Repositories", "github.com/elmir132", AMBER)
     link("link-site.svg", "Website", "elmirabd.me", AMBER)
     link("link-email.svg", "Email", "ea488@cornell.edu", TEAL)
     link("link-paper.svg", "Paper", "CEUR-WS Vol-4278", AMBER)
