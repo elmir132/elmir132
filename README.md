@@ -1,4 +1,4 @@
-<a href="https://elmirabd.me"><img src="assets/banner.svg" width="100%" alt="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to RAG assistants and live voice agents. Opens elmirabd.me."></a>
+<a href="https://elmirabd.me"><img src="assets/banner.svg?v=3" width="100%" alt="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to RAG assistants and live voice agents. Opens elmirabd.me."></a>
 
 <h3 align="center">Hi, I'm Elmir</h3>
 
@@ -26,12 +26,12 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/ble_vulnerability_tinyml"><img src="assets/stat-ble.svg" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model"></a>
+      <a href="https://github.com/elmir132/ble_vulnerability_tinyml"><img src="assets/stat-ble.svg?v=3" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model"></a>
       <br>
       <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code> <code>0.9&nbsp;ms</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/advocate"><img src="assets/stat-advocate.svg" alt="On 20 scripted lines: 0.90 precision and 1.00 recall"></a>
+      <a href="https://github.com/elmir132/advocate"><img src="assets/stat-advocate.svg?v=3" alt="On 20 scripted lines: 0.90 precision and 1.00 recall"></a>
       <br>
       <code>Gemini Live</code> <code>FastAPI</code> <code>JavaScript</code>
     </td>
@@ -48,12 +48,12 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/streetscript"><img src="assets/stat-streetscript.svg" alt="1st place, team of 4, 165 tests"></a>
+      <a href="https://github.com/elmir132/streetscript"><img src="assets/stat-streetscript.svg?v=3" alt="1st place, team of 4, 165 tests"></a>
       <br>
       <code>Python</code> <code>Elasticsearch</code> <code>Mistral</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/hermes"><img src="assets/stat-hermes.svg" alt="6 model tiers with automatic fallback, 20 tests"></a>
+      <a href="https://github.com/elmir132/hermes"><img src="assets/stat-hermes.svg?v=3" alt="6 model tiers with automatic fallback, 20 tests"></a>
       <br>
       <code>Python</code> <code>SQLite</code> <code>RAG</code> <code>systemd</code>
     </td>
@@ -70,12 +70,12 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/mongodb-hackathon"><img src="assets/stat-chronicle.svg" alt="MongoDB Atlas Vector Search, 2 bugs found by live testing"></a>
+      <a href="https://github.com/elmir132/mongodb-hackathon"><img src="assets/stat-chronicle.svg?v=3" alt="MongoDB Atlas Vector Search, 2 bugs found by live testing"></a>
       <br>
       <code>Python</code> <code>MongoDB Atlas</code> <code>vector search</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/security-overflow"><img src="assets/stat-scanner.svg" alt="87 percent detection accuracy across more than 150 test applications"></a>
+      <a href="https://github.com/elmir132/security-overflow"><img src="assets/stat-scanner.svg?v=3" alt="87 percent detection accuracy across more than 150 test applications"></a>
       <br>
       <code>Flask</code> <code>Wapiti</code> <code>SQLMap</code> <code>Nikto</code>
     </td>
@@ -96,16 +96,16 @@
 
 ## Stack
 
-<a href="https://github.com/elmir132?tab=repositories"><img src="assets/stack.svg" width="100%" alt="Languages: Python, TypeScript and JavaScript, C and C++, SQL. ML and AI: TensorFlow, TensorFlow Lite Micro, PyTorch, Gemini, RAG. Backend and data: FastAPI, Flask, MongoDB Atlas, PostgreSQL, SQLite, vector search. Infra: Docker, systemd, DigitalOcean. Hardware: ESP32-S3, BLE, MQTT. Opens the repository list."></a>
+<a href="https://github.com/elmir132?tab=repositories"><img src="assets/stack.svg?v=3" width="100%" alt="Languages: Python, TypeScript and JavaScript, C and C++, SQL. ML and AI: TensorFlow, TensorFlow Lite Micro, PyTorch, Gemini, RAG. Backend and data: FastAPI, Flask, MongoDB Atlas, PostgreSQL, SQLite, vector search. Infra: Docker, systemd, DigitalOcean. Hardware: ESP32-S3, BLE, MQTT. Opens the repository list."></a>
 
 ## Contact
 
 <p align="center">
-  <a href="https://linkedin.com/in/elmirabd"><img src="assets/link-linkedin.svg" height="56" alt="LinkedIn: in/elmirabd"></a>
-  <a href="https://elmirabd.me"><img src="assets/link-site.svg" height="56" alt="Website: elmirabd.me"></a>
-  <a href="mailto:ea488@cornell.edu"><img src="assets/link-email.svg" height="56" alt="Email: ea488@cornell.edu"></a>
-  <a href="https://ceur-ws.org/Vol-4278/short03.pdf"><img src="assets/link-paper.svg" height="56" alt="Paper: CEUR-WS Vol-4278"></a>
-  <a href="https://github.com/elmir132?tab=repositories"><img src="assets/link-github.svg" height="56" alt="Repositories: github.com/elmir132"></a>
+  <a href="https://linkedin.com/in/elmirabd"><img src="assets/link-linkedin.svg?v=3" height="56" alt="LinkedIn: in/elmirabd"></a>
+  <a href="https://elmirabd.me"><img src="assets/link-site.svg?v=3" height="56" alt="Website: elmirabd.me"></a>
+  <a href="mailto:ea488@cornell.edu"><img src="assets/link-email.svg?v=3" height="56" alt="Email: ea488@cornell.edu"></a>
+  <a href="https://ceur-ws.org/Vol-4278/short03.pdf"><img src="assets/link-paper.svg?v=3" height="56" alt="Paper: CEUR-WS Vol-4278"></a>
+  <a href="https://github.com/elmir132?tab=repositories"><img src="assets/link-github.svg?v=3" height="56" alt="Repositories: github.com/elmir132"></a>
 </p>
 
 <p align="center"><sub>Banner and badges are generated by <a href="scripts/build.py"><code>scripts/build.py</code></a>. Every number comes from the linked project READMEs.</sub></p>
