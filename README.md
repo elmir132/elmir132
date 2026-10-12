@@ -61,7 +61,7 @@
   <tr>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/elmir132/hermes">Hermes, personal AI assistant</a></h3>
-      <p>Telegram assistant deployed for a single user, with long-term memory: RAG over a SQLite vector store, quota-aware routing across several models with automatic fallback, supervised by systemd on a Linux server.</p>
+      <p>Telegram assistant I ran for myself on a Linux server under systemd from May 2026 (since shut down; code and tests are public). Long-term memory: RAG over a SQLite vector store, quota-aware routing across several models with automatic fallback.</p>
     </td>
     <td width="50%" valign="top">
       <h3><a href="https://github.com/elmir132/security-overflow">Security Overflow, OWASP scanner</a></h3>
