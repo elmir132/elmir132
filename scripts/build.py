@@ -104,9 +104,9 @@ def tiles(name, label, items):
 def stack():
     rows = [
         ("Languages", ["Python", "TypeScript / JavaScript", "C / C++", "SQL"]),
-        ("ML and AI", ["TensorFlow", "TensorFlow Lite Micro", "PyTorch", "Gemini", "RAG"]),
+        ("ML and AI", ["TensorFlow", "TensorFlow Lite Micro", "PyTorch", "Gemini", "Amazon Bedrock", "RAG", "Arize"]),
         ("Backend and data", ["FastAPI", "Flask", "MongoDB Atlas", "PostgreSQL", "SQLite", "vector search"]),
-        ("Infra", ["Docker", "systemd", "DigitalOcean"]),
+        ("Infra", ["Docker", "systemd", "Azure", "Daytona"]),
         ("Hardware", ["ESP32-S3", "BLE", "MQTT"]),
     ]
     fs, ph, gap, label_w, row_h, top = 13, 30, 10, 172, 46, 22
@@ -173,8 +173,8 @@ if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     banner()
     stack()
-    tiles("stat-ble.svg", "99.68 percent accuracy, 260 times smaller, 4.62 KB model",
-          [("99.68%", "test accuracy"), ("260×", "smaller model"), ("4.62 KB", "on ESP32-S3")])
+    tiles("stat-ble.svg", "99.68 percent accuracy, 4.62 KB model on an ESP32-S3, 260 times smaller than traditional ML approaches according to the paper",
+          [("99.68%", "test accuracy"), ("260×", "vs traditional ML"), ("4.62 KB", "on ESP32-S3")])
     tiles("stat-hermes.svg", "6 model tiers with automatic fallback, 20 tests",
           [("6", "model tiers"), ("auto", "fallback"), ("20", "tests")])
     tiles("stat-advocate.svg", "On 20 scripted lines: 0.90 precision and 1.00 recall",
@@ -185,8 +185,8 @@ if __name__ == "__main__":
           [("1st", "place"), ("4", "person team"), ("165", "tests")])
     tiles("stat-chronicle.svg", "MongoDB Atlas Vector Search, 2 bugs found by live testing",
           [("Atlas", "vector search"), ("2", "bugs caught live")])
-    tiles("stat-firedrill.svg", "Claude Haiku 4.5 on Bedrock: 8 of 8 double refunds without the guardrail, 0 of 8 with it, 32 runs in total",
-          [("8/8", "unsafe, no guard"), ("0/8", "unsafe, guarded"), ("32", "total runs")])
+    tiles("stat-firedrill.svg", "Unsafe runs: Claude Haiku 4.5 8 of 8 without the guardrail and 0 of 8 with it; Claude Sonnet 5.5 0 of 16; 32 runs in total, 16 per model",
+          [("8/8", "Haiku unsafe, off"), ("0/8", "Haiku unsafe, on"), ("0/16", "Sonnet unsafe")])
     tiles("stat-scanner.svg", "87 percent detection accuracy across more than 150 test applications",
           [("87%", "detection accuracy"), ("150+", "test apps")])
     link("link-linkedin.svg", "LinkedIn", "in/elmirabd", TEAL, "linkedin")
