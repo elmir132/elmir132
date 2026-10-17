@@ -31,7 +31,7 @@
       <code>Python</code> <code>Daytona</code> <code>Amazon Bedrock</code> <code>Arize</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/ble_vulnerability_tinyml"><img src="assets/stat-ble.svg?v=5" alt="99.68 percent accuracy, 4.62 KB model on an ESP32-S3, 260 times smaller than traditional ML approaches according to the paper"></a>
+      <a href="https://github.com/elmir132/ble_vulnerability_tinyml"><img src="assets/stat-ble.svg?v=6" alt="99.68 percent accuracy, 4.62 KB model on an ESP32-S3, 75.5 percent smaller after INT8 quantization (from 18.88 KB), per the paper"></a>
       <br>
       <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code> <code>0.9&nbsp;ms</code>
     </td>

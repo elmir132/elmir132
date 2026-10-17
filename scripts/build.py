@@ -173,8 +173,8 @@ if __name__ == "__main__":
     os.makedirs(OUT, exist_ok=True)
     banner()
     stack()
-    tiles("stat-ble.svg", "99.68 percent accuracy, 4.62 KB model on an ESP32-S3, 260 times smaller than traditional ML approaches according to the paper",
-          [("99.68%", "test accuracy"), ("260×", "vs traditional ML"), ("4.62 KB", "on ESP32-S3")])
+    tiles("stat-ble.svg", "99.68 percent accuracy, 4.62 KB model on an ESP32-S3, 75.5 percent smaller after INT8 quantization (from 18.88 KB), per the paper",
+          [("99.68%", "test accuracy"), ("75.5%", "smaller via INT8"), ("4.62 KB", "on ESP32-S3")])
     tiles("stat-hermes.svg", "6 model tiers with automatic fallback, 20 tests",
           [("6", "model tiers"), ("auto", "fallback"), ("20", "tests")])
     tiles("stat-advocate.svg", "On 20 scripted lines: 0.90 precision and 1.00 recall",
