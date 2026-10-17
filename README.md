@@ -16,7 +16,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/elmir132/ble_vulnerability_tinyml">TinyML BLE vulnerability detection</a></h3>
+      <h3><a href="https://ceur-ws.org/Vol-4278/short03.pdf">TinyML BLE vulnerability detection</a></h3>
       <p>Neural classifier for real-time Bluetooth Low Energy threat detection on embedded hardware. Published at <i>CH&amp;CMiGIN-2026</i>, Kraków (<a href="https://ceur-ws.org/Vol-4278/short03.pdf">CEUR-WS Vol-4278</a>, Scopus-indexed).</p>
     </td>
     <td width="50%" valign="top">
@@ -26,7 +26,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/ble_vulnerability_tinyml"><img src="assets/stat-ble.svg?v=4" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model"></a>
+      <a href="https://ceur-ws.org/Vol-4278/short03.pdf"><img src="assets/stat-ble.svg?v=4" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model"></a>
       <br>
       <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code> <code>0.9&nbsp;ms</code>
     </td>
@@ -64,8 +64,8 @@
       <p>Telegram assistant deployed for a single user, with long-term memory: RAG over a SQLite vector store, quota-aware routing across several models with automatic fallback, supervised by systemd on a Linux server.</p>
     </td>
     <td width="50%" valign="top">
-      <h3><a href="https://github.com/elmir132/security-overflow">Security Overflow, OWASP scanner</a></h3>
-      <p>Flask scanner that orchestrates Wapiti, SQLMap and Nikto behind one interface, with LLM-generated remediation guidance.</p>
+      <h3><a href="https://github.com/elmir132/fire-drill-core">Agent Fire Drill, a crash test for AI agents</a></h3>
+      <p>A mock payment times out after it was processed. A verifier reads the real ledger to see whether the agent refunds twice, then a guardrail is applied and the run repeated in a fresh Daytona sandbox. Built with a teammate at the Daytona HackSprint with Arize AI. Mock payments, one fault. <a href="https://elmirabd.me/fire-drill-core/">Interactive demo</a>.</p>
     </td>
   </tr>
   <tr>
@@ -75,9 +75,9 @@
       <code>Python</code> <code>SQLite</code> <code>RAG</code> <code>systemd</code>
     </td>
     <td width="50%" valign="top">
-      <a href="https://github.com/elmir132/security-overflow"><img src="assets/stat-scanner.svg?v=4" alt="87 percent detection accuracy across more than 150 test applications"></a>
+      <a href="https://github.com/elmir132/fire-drill-core"><img src="assets/stat-firedrill.svg?v=1" alt="Claude Haiku 4.5 on Bedrock: 8 of 8 double refunds without the guardrail, 0 of 8 with it, 32 runs in total"></a>
       <br>
-      <code>Flask</code> <code>Wapiti</code> <code>SQLMap</code> <code>Nikto</code>
+      <code>Python</code> <code>Daytona</code> <code>Amazon Bedrock</code> <code>Arize</code>
     </td>
   </tr>
 </table>
@@ -86,6 +86,7 @@
 
 | Project | What it is |
 |:--|:--|
+| [Security Overflow](https://github.com/elmir132/security-overflow) | Flask scanner that orchestrates Wapiti, SQLMap and Nikto behind one interface, with LLM-generated remediation guidance. Successor to my B.Sc. thesis scanner. |
 | [PharOS](https://github.com/elmir132/pharos) | Team hackathon project (4 people): a 3D Manhattan crash-history map with live street-video review. I built the near-miss measurement and the shared map color scale. |
 | [Chronicle](https://github.com/elmir132/mongodb-hackathon) | Self-healing project memory from a MongoDB hackathon (team of 4). I built the resolution engine: conflict resolution by source authority and recency, and policy learning from human corrections. |
 | [Utility Debt Shield](https://github.com/elmir132/utility-debt-shield) | Prototype API that flags utility activation friction before a lease is signed (mock data only). |

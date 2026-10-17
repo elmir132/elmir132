@@ -185,6 +185,8 @@ if __name__ == "__main__":
           [("1st", "place"), ("4", "person team"), ("165", "tests")])
     tiles("stat-chronicle.svg", "MongoDB Atlas Vector Search, 2 bugs found by live testing",
           [("Atlas", "vector search"), ("2", "bugs caught live")])
+    tiles("stat-firedrill.svg", "Claude Haiku 4.5 on Bedrock: 8 of 8 double refunds without the guardrail, 0 of 8 with it, 32 runs in total",
+          [("8/8", "unsafe, no guard"), ("0/8", "unsafe, guarded"), ("32", "total runs")])
     tiles("stat-scanner.svg", "87 percent detection accuracy across more than 150 test applications",
           [("87%", "detection accuracy"), ("150+", "test apps")])
     link("link-linkedin.svg", "LinkedIn", "in/elmirabd", TEAL, "linkedin")
