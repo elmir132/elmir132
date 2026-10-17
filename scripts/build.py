@@ -36,7 +36,7 @@ def wave(x0, x1, y, bursts, step=2):
 
 def banner():
     path = wave(690, 1230, 168, [(790, 30, 46, 22), (960, 38, 64, 24), (1120, 26, 34, 20)])
-    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to an assistant serving live users.">
+    svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-label="Elmir Abdullaiev, AI and software engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to an assistant serving live users.">
   <defs>
     <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#21262d"/></pattern>
     <linearGradient id="fade" x1="0" x2="1"><stop offset="0" stop-color="{BG}" stop-opacity="1"/><stop offset=".55" stop-color="{BG}" stop-opacity="0"/></linearGradient>
@@ -73,7 +73,7 @@ def banner():
     <text x="30" y="20" font-family="{MONO}" font-size="13" fill="{AMBER}">classified in 0.9 ms</text>
   </g>
   <text x="56" y="132" font-family="{SANS}" font-size="56" font-weight="700" fill="{TEXT}" letter-spacing="-1">Elmir Abdullaiev</text>
-  <text x="58" y="178" font-family="{SANS}" font-size="23" fill="{MUTED}">AI / backend engineer · M.Eng. CS, Cornell Tech</text>
+  <text x="58" y="178" font-family="{SANS}" font-size="23" fill="{MUTED}">AI / software engineer · M.Eng. CS, Cornell Tech</text>
   <text x="58" y="228" font-family="{SANS}" font-size="17" fill="{DIM}">From a 4.62 KB model on a microcontroller</text>
   <text x="58" y="252" font-family="{SANS}" font-size="17" fill="{DIM}">to RAG assistants and live voice agents.</text>
   <g transform="translate(58 270)">

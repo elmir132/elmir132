@@ -1,9 +1,9 @@
-<a href="https://elmirabd.me"><img src="assets/banner.svg?v=4" width="100%" alt="Elmir Abdullaiev, AI and backend engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to RAG assistants and live voice agents. Opens elmirabd.me."></a>
+<a href="https://elmirabd.me"><img src="assets/banner.svg?v=5" width="100%" alt="Elmir Abdullaiev, AI and software engineer, M.Eng. Computer Science at Cornell Tech. From a 4.62 KB model on a microcontroller to RAG assistants and live voice agents. Opens elmirabd.me."></a>
 
 <h3 align="center">Hi, I'm Elmir</h3>
 
 <p align="center">
-  AI and backend engineer, M.Eng. CS candidate at <b>Cornell Tech</b>, building toward founding an AI startup.<br>
+  AI and software engineer, M.Eng. CS candidate at <b>Cornell Tech</b>.<br>
   Background in cybersecurity (B.Sc. honors, M.Sc. in progress), now focused on applied ML systems that ship.
 </p>
 
