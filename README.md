@@ -16,7 +16,7 @@
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3><a href="https://ceur-ws.org/Vol-4278/short03.pdf">TinyML BLE vulnerability detection</a></h3>
+      <h3><a href="https://github.com/elmir132/ble_vulnerability_tinyml">TinyML BLE vulnerability detection</a></h3>
       <p>Neural classifier for real-time Bluetooth Low Energy threat detection on embedded hardware. Published at <i>CH&amp;CMiGIN-2026</i>, Kraków (<a href="https://ceur-ws.org/Vol-4278/short03.pdf">CEUR-WS Vol-4278</a>, Scopus-indexed).</p>
     </td>
     <td width="50%" valign="top">
@@ -26,7 +26,7 @@
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <a href="https://ceur-ws.org/Vol-4278/short03.pdf"><img src="assets/stat-ble.svg?v=4" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model"></a>
+      <a href="https://github.com/elmir132/ble_vulnerability_tinyml"><img src="assets/stat-ble.svg?v=4" alt="99.68 percent accuracy, 260 times smaller, 4.62 KB model"></a>
       <br>
       <code>TensorFlow Lite Micro</code> <code>ESP32-S3</code> <code>BLE</code> <code>0.9&nbsp;ms</code>
     </td>
