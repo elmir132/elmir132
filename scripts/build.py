@@ -190,8 +190,6 @@ if __name__ == "__main__":
     tiles("stat-scanner.svg", "87 percent detection accuracy across more than 150 test applications",
           [("87%", "detection accuracy"), ("150+", "test apps")])
     link("link-linkedin.svg", "LinkedIn", "in/elmirabd", TEAL, "linkedin")
-    link("link-github.svg", "Repositories", "github.com/elmir132", AMBER, "github")
     link("link-site.svg", "Website", "elmirabd.me", AMBER, "site")
     link("link-email.svg", "Email", "ea488@cornell.edu", TEAL, "email")
-    link("link-paper.svg", "Paper", "CEUR-WS Vol-4278", AMBER, "paper")
     print("built:", ", ".join(sorted(os.listdir(OUT))))
