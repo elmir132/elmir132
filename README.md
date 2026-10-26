@@ -51,6 +51,7 @@ Stack: Python, SQLite, RAG, systemd
 | [Security Overflow](https://github.com/elmir132/security-overflow) | Flask scanner that orchestrates Wapiti, SQLMap and Nikto behind one interface, with LLM-generated remediation guidance. Successor to my B.Sc. thesis scanner. |
 | [PharOS](https://github.com/elmir132/pharos) | Team hackathon project (4 people): a 3D Manhattan crash-history map with live street-video review. I built the near-miss measurement and the shared map color scale. |
 | [Chronicle](https://github.com/elmir132/mongodb-hackathon) | Self-healing project memory from a MongoDB hackathon (team of 4). I built the resolution engine: conflict resolution by source authority and recency, and policy learning from human corrections. |
+| [Drawproof](https://github.com/elmir132/drawproof) | Team hackathon project (5 people, XRPL): construction lending where escrow is released only after an inspector's signed audit and automated checks pass. I built the TypeScript verifier and the design preview. Mock mode in the demo. |
 | [Utility Debt Shield](https://github.com/elmir132/utility-debt-shield) | Prototype API that flags utility activation friction before a lease is signed (mock data only). |
 | [ClipTidy](https://github.com/elmir132/cliptidy) | macOS menu-bar app that cleans clipboard text with one shortcut. |
 | [Multi-model research orchestrator](https://github.com/elmir132/multi-model-research-orchestrator) | CLI that compares several AI providers on one question and shows where they disagree. |
